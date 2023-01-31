@@ -1,109 +1,456 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
 }
-body{
-    background-color: black;
-    color: white;
+body {
+  background-color: black;
+  color: white;
 }
 /*-----------------------------------------------------HEADER------------------------------------------------------*/
 
-#header{
-    width: 100%;
-    height: 100vh;      
+#header {
+  width: 100%;
+  height: 100vh;
 }
-.header img{
-    height: 90vh;
-    position: relative;
-    left: 54vw;
-    top: 0;
-   
+.header img {
+  height: 90vh;
+  position: relative;
+  left: 54vw;
+  top: 0;
 }
 /*-----------------------------------------------------Navbar------------------------------------------------------*/
-nav{
-    padding-left: 5%;
-    padding-right: 10%;
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+nav {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo{
-    color: white;
-    font-size: 25px;
+.navlinks {
+  flex: 1;
+  text-align: right;
 }
-span{
-    color: red;
+.logo {
+  color: white;
+  font-size: 25px;
 }
-nav ul li{
-    display: inline-flex;
-    list-style: none;
-    margin: 10px 20px;  
+span {
+  color: red;
 }
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+nav ul li {
+  display: inline-flex;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-  /*adding hover effects to nav items*/
-  nav ul li a::after {
-    content: "";
-    width: 0%; /*will change during hover*/
-    height: 3px;
-    background-color: lightcoral;
-    display: flex;
-    transition: 0.5s;
-  }
-  nav ul li a:hover::after {
-    width: 100%; 
-  }
-  nav ul li a:hover{
-    color: white;
-  }
-  /*-----------------------------------------------------Header Text------------------------------------------------------------------*/
-  .headertext{
-    position: absolute;
-    left: 4vw;
-    top: 36vh;
-  }
-  .headertext p{
-    font-size: 28px;
-    margin: 20px;
-  }
-  .headertext h2{
-font-size: 50px;
-  }
-  /*-----------------------------------------------------About------------------------------------------------------------------*/
-  #about{
-    padding-top: 80px;
-    
-    color: white;
-  }
-.row{
+/*adding hover effects to nav items*/
+nav ul li a::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: lightcoral;
+  display: flex;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav .icons {
+  display: none;
+}
+/*-------------------------------------------------Header Text-----------------------------------------------*/
+.headertext {
+  position: absolute;
+  left: 4vw;
+  top: 36vh;
+}
+.headertext p {
+  font-size: 28px;
+  margin: 20px;
+}
+h2 {
+  font-size: 50px;
+}
+/*-----------------------------------------------------About-------------------------------------------------------------*/
+#about {
+  padding-top: 80px;
+
+  color: white;
+}
+.row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 10vh;
+}
+.column1 {
+  background-color: #454545;
+  border-radius: 10px;
+  flex-basis: 28%;
+}
+.column1 img {
+  height: 350px;
+}
+.column2 {
+  flex-basis: 56%;
+}
+.column2 h3 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 7px;
+}
+.tab-name {
+  display: flex;
+  margin: 20px 0 20px;
+}
+.tabtitles {
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tabtitles::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: red;
+  display: flex;
+  transition: 0.5s;
+}
+.tabtitles:hover::after {
+  width: 100%;
+}
+.tabtitles:hover {
+  color: white;
+}
+.tabcontent ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.tabcontent ul li span {
+  font-size: 14px;
+  color: goldenrod;
+}
+/*hiding tab content*/
+.tabcontent {
+  display: none;
+}
+.tabcontent.activetab {
+  display: block;
+}
+/*using js to switch betwwen*/
+
+/*-------------------------------------------Services-----------------------------------------------------------------*/
+#services {
+  margin: 50px;
+}
+.sub-title {
+display: flex;
+justify-content: center;
+}
+.services-list {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+ 
+}
+.services-list div {
+  background-color: wheat;
+  padding: 20px 20px 20px 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background-color 0.5s,transform 0.5s ;
+  color: black;  
+}
+.services-list div i {
+  font-size: 50px;
+}
+.services-list div h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.services-list div a {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+.services-list div:hover{
+  background: pink;
+  transform: translateY(-10px);
+  color: black;
+}
+/*------------------------------------------portfolio--------------------------------------------------------*/
+#portfolio{
+  margin-top: 50px;
+  margin-bottom: 50px;
   
   
 }
-.column1{
-background-color: #454545;
-border-radius: 10px;
-flex-basis: 28%;
+.worklist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 9vw;
 }
-.column1 img{
-height: 350px;
+#portfolio .sub-title {
+display: flex;
+justify-content: center;
+}
+.work{
+  margin-right: 4vw;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+  
+}
+.work img{
+  border-radius: 10px;
+  display: block;
  
 }
-.column2{
-flex-basis: 56%;
+.layer{
+  width: 100%;
+  height: 0;    /*heighthidden*/
+  background: linear-gradient(rgba(0,0,0,0.5), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: height 0.5s;
+ 
+}
+.layer h3{
+  font-weight: 500;
+  margin: 5px;
+}
+.layer p{
+margin: 10px;
+font-size: 10px;
+}
+.layer a{
+  color: #ff004f;
+  font-size: 18px;
+  line-height: 48px;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  margin-top: 10px;
+  
+}
+.work:hover{
+  transform: scale(1.1); /*image zoom*/
+}
+.work:hover .layer{
+  height: 100%;
+}
+.workbtn{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+text-decoration: none;
+padding: 10px 40px 10px 40px;
+border-radius: 5px;
+color: white;
+font-weight: 600;
+transition: background 0.1s;
+border: 1px solid white;
 }
 
+.btn:hover{
+  background: #ff004f;
+  border: 1px solid black;
+}
+/*-----------------------------------------------------CONTACT-------------------------------------------*/
+#contact .row{
+ display: flex;
+ margin-top: 15vh;
+}
+.contact-left{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin-top: 2vh;
+}
 
-  /*-----------------------------------------------------Media Queries------------------------------------------------------*/
-  /*-----------------------------------------------------Navbar--------------------------------------------------------------*/
+.contact-left p{
+  margin: 15px;
+  font-size: 20px;
+  display: flex;
+  
+}
+
+.contact-left p i{
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+}
+.contact-left h2{
+  margin-left: 1vw;
+  margin-bottom: 10px;
+}
+.contact-left p i{
+  color: goldenrod;
+}
+.socialiconsflexbox{
+  display: flex;
+  margin: 20px;
+  
+  justify-content: space-between;
+  margin-left: 1vw;
  
+}
+.socialicons i{
+  margin-right: 15px;
+  font-size: 28px;
+ color: aliceblue;
+ transition: font-size 0.5s;
+ 
+ 
+}
+.socialicons i:hover{
+  color: goldenrod;
+  font-size: 32px;
+}
+.btn2class {
+  margin-top: 2vh;
+}
+.btn2{
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: white;
+  transition: background 0.1s;
+  border: 1px solid white;
+  text-align: center;
+  }
+  
+  .btn2:hover{
+    background: #ff004f;
+    border: 1px solid black;
+  }
+  .contact-right form{
+   margin-right: 2vw;
+  }
+form input, form textarea{
+  outline: none;
+  background: #262626;
+  margin: 13px 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 7px;
+}
+.btn3{
+  margin-top: 5px;
+  text-decoration: none;
+  padding: 12px 50px;
+  border-radius: 5px;
+ background-color: black;
+ color: white;
+  transition: background 0.1s;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 15px;
+}
+.btn3:hover{
+  background: #ff004f;
+    border: 1px solid black;
+}
+.copyright{
+  margin-top: 3vh;
+  background-color: #454545;
+  padding: 2vh;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*-----------------------------------------------------Media Queries-------------------------------------------*/
+@media (max-width: 700px) {
+  .navlinks ul li {
+    display: block;
+  }
+  /*menu*/
+  .navlinks {
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 200px;
+    z-index: 2;
+    text-align: left;
+    top: 0;
+    right: -200px;
+    transition: 0.5s; /*for sidebar*/
+  }
+  /*menu icon*/
+  nav .icons {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+  }
+  /*SERVICES*/
+
+  .sub-title{
+    margin-left: 13%;
+    font-size: 35px;
+  }
+  .services-list{
+    flex-wrap: wrap;
+  }
+  .services-list div{
+    margin-bottom: 15px;
+  }
+
+
+
+
+/*Work*/
+#portfolio .sub-title {
+  margin-left: 25vw;
+  font-size: 30px;
+}
+
+.work{
+margin-bottom: 20px;
+  
+}
+.btn{
+  margin-left: 30%;
+}
+
+}
+/*-----------------------------------------------------Navbar--------------------------------------------------------------*/
