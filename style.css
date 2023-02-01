@@ -93,14 +93,19 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 10vh;
+  margin-left: 5vw;
 }
 .column1 {
   background-color: #454545;
   border-radius: 10px;
-  flex-basis: 28%;
+  
 }
 .column1 img {
   height: 350px;
+ transform: rotate(-90deg);
+ border-radius: 15px;
+ border: 10px solid white;
+
 }
 .column2 {
   flex-basis: 56%;
@@ -110,10 +115,15 @@ h2 {
   font-size: 50px;
   margin-bottom: 7px;
 }
+.column2 p{
+ color: gray;
+ font-weight: 500;
+}
 .tab-name {
   display: flex;
   margin: 20px 0 20px;
 }
+
 .tabtitles {
   margin-right: 50px;
   font-size: 20px;
@@ -136,11 +146,12 @@ h2 {
 }
 .tabcontent ul li {
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .tabcontent ul li span {
   font-size: 14px;
   color: goldenrod;
+
 }
 /*hiding tab content*/
 .tabcontent {
@@ -155,7 +166,7 @@ h2 {
 #services {
   margin: 50px;
 }
-.sub-title {
+.services {
 display: flex;
 justify-content: center;
 }
@@ -182,7 +193,7 @@ justify-content: center;
 .services-list div h3 {
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   margin-top: 10px;
 }
 .services-list div a {
@@ -202,8 +213,10 @@ justify-content: center;
 #portfolio{
   margin-top: 50px;
   margin-bottom: 50px;
-  
-  
+}
+.projects{
+  display: flex;
+  justify-content: center;
 }
 .worklist{
   display: flex;
@@ -212,11 +225,7 @@ justify-content: center;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 9vw;
-}
-#portfolio .sub-title {
-display: flex;
-justify-content: center;
+  
 }
 .work{
   margin-right: 4vw;
@@ -277,6 +286,7 @@ font-size: 10px;
 .workbtn{
   display: flex;
   justify-content: center;
+  
 }
 .btn{
 text-decoration: none;
@@ -373,6 +383,8 @@ form input, form textarea{
   color: white;
   font-size: 18px;
   border-radius: 7px;
+border-width: 2px;
+border-style: solid;
 }
 .btn3{
   margin-top: 5px;
@@ -397,15 +409,162 @@ form input, form textarea{
   text-align: center;
   font-weight: 600;
 }
-
+/*--------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------Media Queries-------------------------------------------*/
 @media (max-width: 700px) {
   .navlinks ul li {
     display: block;
   }
-  /*menu*/
-  .navlinks {
+  /*header*/
+  .headertext {
     position: absolute;
+    left: 4vw;
+    top: 20vh;
+  }
+  .headertext p {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  h2{
+    font-size: 25px;
+    word-wrap: break-word;
+    width: 200px;
+  }
+  .header img {
+    height: 70vh;
+    position: relative;
+    left: 20vw;
+    top: 0;
+  }
+  .image-container {
+    overflow: hidden;
+  }
+
+  /*---------------------------about--------------------------------------------------------------------------------*/
+  #about {
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .column1 {
+    background-color: #454545;
+    border-radius: 10px;
+  }
+  .column1 img {
+   height: 250px;
+   transform: rotate(-90deg);
+   border-radius: 10px;
+   border: 10px solid white;
+  
+  }
+  .column2 h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .column2 p{
+   color: gray;
+   font-weight: 500;
+   font-size: 17px;
+   word-wrap: break-word;
+   margin: 20px;
+   word-spacing: 2px;
+  }
+  .tab-name {
+    display: flex;
+    margin: 10px 0 10px;
+  }
+  
+  .tabtitles {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /*Services*/
+  #services {
+    margin: 30px;
+    
+  }
+  #services .sub-title {
+  display: flex;
+  justify-content: center;
+ font-size: 30px;
+  }
+  .services-list {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+   
+  }
+  .services-list div {
+    padding: 20px 20px 20px 30px;
+    font-size: 13px;
+    font-weight: 300; 
+  }
+  .services-list div i {
+    font-size: 40px;
+  }
+  .services-list div h3 {
+    font-size: 20px;
+  }
+  /*----------------------------------------------------------------projects--------------------------------------*/
+.projects{
+  margin-left: 18vw;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+  .worklist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+ 
+  .work{
+    margin-right: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s; 
+  }
+  .work img{
+    border-radius: 10px;
+    display: block;
+  }
+
+  .layer h3{
+    font-weight: 500;
+    margin: 5px;
+  }
+  .layer p{
+  margin: 10px;
+  font-size: 10px;
+  }
+  .layer a{
+    color: #ff004f;
+    font-size: 18px;
+    line-height: 48px;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+  }
+ 
+  
+ 
+  
+  /*-------------------------------------------------------nav--------------------------------------------*/
+  .navlinks {
+    position: fixed;
     background-color: black;
     color: white;
     height: 100vh;
@@ -422,12 +581,14 @@ form input, form textarea{
     margin: 10px;
     cursor: pointer;
   }
-  /*SERVICES*/
+  /*----------------------------------------SERVICES-----------------------------------------------------*/
 
-  .sub-title{
-    margin-left: 13%;
-    font-size: 35px;
+  .services{
+    margin-left: 12vw;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
+ 
   .services-list{
     flex-wrap: wrap;
   }
@@ -436,21 +597,70 @@ form input, form textarea{
   }
 
 
-
-
-/*Work*/
-#portfolio .sub-title {
-  margin-left: 25vw;
-  font-size: 30px;
-}
-
 .work{
 margin-bottom: 20px;
-  
 }
-.btn{
-  margin-left: 30%;
+.sub-title{
+  margin-left: 18vw;
 }
 
+/*---------------------------------------------------------------------Contact--------------------------------------*/
+
+
+.contact-right form{
+  margin-top: 25px;
+margin-right: 0;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+ }
+form input, form textarea{
+ outline: none;
+ background: #262626;
+ margin: 10px 0;
+ width: 70vw;
+ padding: 15px;
+ color: white;
+ font-size: 18px;
+ border-radius: 7px;
+border-width: 2px;
+border-style: solid;
 }
-/*-----------------------------------------------------Navbar--------------------------------------------------------------*/
+.socialiconsflexbox{
+  display: flex;
+  justify-content: center;
+}
+.btn2class{
+  display: flex;
+  justify-content: center;
+  margin-right: 9vw;
+}
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 0;
+  }
+  #contact .row{
+    display: flex;
+    margin-top: 8vh;
+   }
+  
+  .contact-left h2{
+    display: flex;
+    justify-content: center;
+    margin-left: 6vw;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .contact-left p{
+    margin: 15px;
+    font-size: 17px;
+    display: flex;
+  }
+  .contact-left p i{
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
