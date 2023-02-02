@@ -82,6 +82,23 @@ nav .icons {
 h2 {
   font-size: 50px;
 }
+.instaflex{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.instagit i{
+  margin-right: 2vw;
+  font-size: 50px;
+ color: aliceblue;
+ transition: font-size 0.5s;
+ 
+ 
+}
+.instagit i:hover{
+  color: goldenrod;
+  font-size: 55px;
+}
 /*-----------------------------------------------------About-------------------------------------------------------------*/
 #about {
   padding-top: 80px;
@@ -237,6 +254,7 @@ justify-content: center;
 .work img{
   border-radius: 10px;
   display: block;
+  width: 230px;
  
 }
 .layer{
@@ -415,7 +433,20 @@ border-style: solid;
   .navlinks ul li {
     display: block;
   }
-  /*header*/
+  /*-----------------------------------header------------------------------------------------------------------*/
+  .instaflex{
+    margin-top: 17vh;
+    display: flex;
+    justify-content: center;
+  }
+  .instagit i{
+    margin-right: 6vw;
+    font-size: 40px;
+   color: aliceblue;
+   transition: font-size 0.5s;
+   
+   
+  }
   .headertext {
     position: absolute;
     left: 4vw;
