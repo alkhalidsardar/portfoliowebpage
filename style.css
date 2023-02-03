@@ -1,12 +1,12 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   background-color: black;
@@ -54,7 +54,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
- 
 }
 
 /*adding hover effects to nav items*/
@@ -89,20 +88,18 @@ h2 {
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
 }
-.instaflex{
+.instaflex {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
-.instagit i{
+.instagit i {
   margin-right: 2vw;
   font-size: 50px;
- color: aliceblue;
- transition: font-size 0.5s;
- 
- 
+  color: aliceblue;
+  transition: font-size 0.5s;
 }
-.instagit i:hover{
+.instagit i:hover {
   color: goldenrod;
   font-size: 55px;
 }
@@ -117,22 +114,18 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 10vh;
-  
 }
 .column1 {
   background-color: #454545;
   border-radius: 10px;
   margin-left: 2vw;
   height: 360px;
-  
 }
 .column1 img {
   height: 360px;
- transform: rotate(-90deg);
- border-radius: 15px;
- border: 10px solid white;
- 
-
+  transform: rotate(-90deg);
+  border-radius: 15px;
+  border: 10px solid white;
 }
 .column2 {
   flex-basis: 56%;
@@ -141,9 +134,9 @@ h2 {
   font-size: 45px;
   margin-bottom: 7px;
 }
-.column2 p{
- color: gray;
- font-weight: 500;
+.column2 p {
+  color: gray;
+  font-weight: 500;
 }
 .tab-name {
   display: flex;
@@ -171,12 +164,10 @@ h2 {
 .tabcontent ul li {
   list-style: none;
   margin-bottom: 15px;
- 
 }
 .tabcontent ul li span {
   font-size: 14px;
   color: goldenrod;
-
 }
 /*hiding tab content*/
 .tabcontent {
@@ -190,16 +181,16 @@ h2 {
 /*-------------------------------------------Services-----------------------------------------------------------------*/
 #services {
   margin: 50px;
+  padding-top: 40px;
 }
 .services {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .services-list {
   display: flex;
   margin-top: 40px;
   justify-content: center;
- 
 }
 .services-list div {
   background-color: wheat;
@@ -209,8 +200,8 @@ justify-content: center;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
-  transition: background-color 0.5s,transform 0.5s ;
-  color: black;  
+  transition: background-color 0.5s, transform 0.5s;
+  color: black;
 }
 .services-list div i {
   font-size: 50px;
@@ -222,7 +213,7 @@ justify-content: center;
   margin-top: 10px;
   font-family: "Times New Roman", Times, serif;
 }
-.services-list div p{
+.services-list div p {
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
 }
@@ -235,47 +226,44 @@ justify-content: center;
   color: black;
   font-family: "Times New Roman", Times, serif;
 }
-.services-list div:hover{
+.services-list div:hover {
   background: pink;
   transform: translateY(-10px);
   color: black;
 }
 /*------------------------------------------portfolio--------------------------------------------------------*/
-#portfolio{
-  margin-top: 50px;
-  margin-bottom: 50px;
+#portfolio {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 40px;
 }
-.projects{
+.projects {
   display: flex;
   justify-content: center;
-
 }
-.worklist{
+.worklist {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  
 }
-.work{
+.work {
   margin-right: 4vw;
   position: relative;
   overflow: hidden;
   transition: transform 0.5s;
-  
 }
-.work img{
+.work img {
   border-radius: 10px;
   display: block;
   width: 230px;
- 
 }
-.layer{
+.layer {
   width: 100%;
-  height: 0;    /*heighthidden*/
-  background: linear-gradient(rgba(0,0,0,0.5), #ff004f);
+  height: 0; /*heighthidden*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -287,19 +275,18 @@ justify-content: center;
   flex-direction: column;
   text-align: center;
   transition: height 0.5s;
- 
 }
-.layer h3{
+.layer h3 {
   font-weight: 500;
   margin: 5px;
 }
-.layer p{
-margin: 10px;
-font-size: 10px;
-font-weight: 500;
-font-family: "Times New Roman", Times, serif;
+.layer p {
+  margin: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
 }
-.layer a{
+.layer a {
   color: #ff004f;
   font-size: 18px;
   line-height: 48px;
@@ -310,82 +297,78 @@ font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: white;
   margin-top: 10px;
-  
 }
-.work:hover{
+.work:hover {
   transform: scale(1.1); /*image zoom*/
 }
-.work:hover .layer{
+.work:hover .layer {
   height: 100%;
 }
-.workbtn{
+.workbtn {
   display: flex;
   justify-content: center;
-  
 }
-.btn{
-text-decoration: none;
-padding: 10px 40px 10px 40px;
-border-radius: 5px;
-color: white;
-font-weight: 600;
-transition: background 0.1s;
-border: 2px solid #ff004f ;
+.btn {
+  text-decoration: none;
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  transition: background 0.1s;
+  border: 2px solid #ff004f;
 }
 
-.btn:hover{
+.btn:hover {
   background: #ff004f;
   border: 1px solid black;
 }
 /*-----------------------------------------------------CONTACT-------------------------------------------*/
-#contact .row{
- display: flex;
- justify-content: space-around;
- margin-top: 15vh;
- margin-left: 2vw;
- margin-right: 2vw;
+#contact .row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
-.contact-left p{
- 
+.contact-left p {
   font-size: 18px;
   display: flex;
-  
 }
 
-.contact-left p i{
+.contact-left p i {
   color: white;
   margin-right: 5px;
   font-size: 25px;
 }
-.contact-left h2{
+.contact-left h2 {
   margin-left: 0vw;
   margin-bottom: 20px;
   font-size: 40px;
 }
-.contact-left p i{
+.contact-left p i {
   color: goldenrod;
 }
-.socialiconsflexbox{
+.socialiconsflexbox {
   display: flex;
   margin: 20px;
   margin-left: 0;
   justify-content: space-between;
 }
-.socialicons i{
+.socialicons i {
   margin-right: 15px;
   font-size: 28px;
- color: aliceblue;
- transition: font-size 0.5s;
+  color: aliceblue;
+  transition: font-size 0.5s;
 }
-.socialicons i:hover{
+.socialicons i:hover {
   color: goldenrod;
   font-size: 32px;
 }
 .btn2class {
   margin-top: 2vh;
 }
-.btn2{
+.btn2 {
   text-decoration: none;
   padding: 10px 40px;
   border-radius: 5px;
@@ -393,16 +376,17 @@ border: 2px solid #ff004f ;
   transition: background 0.1s;
   border: 1px solid white;
   text-align: center;
-  }
-  
-  .btn2:hover{
-    background: #ff004f;
-    border: 1px solid black;
-  }
-  .contact-right form{
-   margin-right: 2vw;
-  }
-form input, form textarea{
+}
+
+.btn2:hover {
+  background: #ff004f;
+  border: 1px solid black;
+}
+.contact-right form {
+  margin-right: 2vw;
+}
+form input,
+form textarea {
   outline: none;
   font-family: "Times New Roman", Times, serif;
   background: #262626;
@@ -412,26 +396,26 @@ form input, form textarea{
   color: white;
   font-size: 14px;
   border-radius: 7px;
-border-width: 2px;
-border-style: solid;
+  border-width: 2px;
+  border-style: solid;
 }
-.btn3{
+.btn3 {
   margin-top: 5px;
   text-decoration: none;
   padding: 12px 50px;
   border-radius: 5px;
- background-color: black;
- color: white;
+  background-color: black;
+  color: white;
   transition: background 0.1s;
   border: 1px solid white;
   text-align: center;
   font-size: 15px;
 }
-.btn3:hover{
+.btn3:hover {
   background: #ff004f;
-    border: 1px solid black;
+  border: 1px solid black;
 }
-.copyright{
+.copyright {
   margin-top: 3vh;
   background-color: #454545;
   padding: 2vh;
@@ -445,18 +429,21 @@ border-style: solid;
     display: block;
   }
   /*-----------------------------------header------------------------------------------------------------------*/
-  .instaflex{
+  .icons{
+    font-size: 34px;
+    
+  }
+  
+  .instaflex {
     margin-top: 17vh;
     display: flex;
     justify-content: center;
   }
-  .instagit i{
+  .instagit i {
     margin-right: 6vw;
     font-size: 40px;
-   color: aliceblue;
-   transition: font-size 0.5s;
-   
-   
+    color: aliceblue;
+    transition: font-size 0.5s;
   }
   .headertext {
     position: absolute;
@@ -464,11 +451,11 @@ border-style: solid;
     top: 20vh;
   }
   .headertext p {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px;
   }
 
-  h2{
+  h2 {
     font-size: 25px;
     word-wrap: break-word;
     width: 200px;
@@ -488,7 +475,7 @@ border-style: solid;
     padding-top: 20px;
     color: white;
   }
-  
+
   .column1 {
     background-color: #454545;
     border-radius: 10px;
@@ -496,15 +483,14 @@ border-style: solid;
     height: 240px;
     margin-bottom: 4vh;
     margin-top: 6vh;
-    
   }
   .column1 img {
     height: 240px;
-   transform: rotate(-90deg);
-   border-radius: 10px;
-   border: 10px solid white;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    border: 10px solid white;
   }
-  
+
   .column2 h3 {
     display: flex;
     justify-content: center;
@@ -513,36 +499,37 @@ border-style: solid;
     margin-bottom: 15px;
     margin-top: 15px;
   }
-  .column2 p{
-   color: gray;
-   font-weight: 500;
-   font-size: 13px;
-   margin: 0px;
-   word-spacing: 2px;
+  .column2 p {
+    color: gray;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0px;
+    word-spacing: 2px;
   }
   .tab-name {
     display: flex;
     margin: 10px 0 10px;
   }
-  
+
   .tabtitles {
     margin-right: 10px;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
   }
-  
- 
+
   /*----------------------------------------------------------------projects--------------------------------------*/
-.projects{
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-  margin-left: 21vw;
-  
-}
-  .worklist{
+  #portfolio{
+    margin-top: 0%;
+  }
+  .projects {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 21vw;
+  }
+  .worklist {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -550,27 +537,27 @@ border-style: solid;
     margin-top: 20px;
     margin-bottom: 25px;
   }
- 
-  .work{
+
+  .work {
     margin-right: 0;
     position: relative;
     overflow: hidden;
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
   }
-  .work img{
+  .work img {
     border-radius: 10px;
     display: block;
   }
 
-  .layer h3{
+  .layer h3 {
     font-weight: 500;
     margin: 5px;
   }
-  .layer p{
-  margin: 10px;
-  font-size: 10px;
+  .layer p {
+    margin: 10px;
+    font-size: 10px;
   }
-  .layer a{
+  .layer a {
     color: #ff004f;
     font-size: 18px;
     line-height: 48px;
@@ -582,10 +569,7 @@ border-style: solid;
     background-color: white;
     margin-top: 10px;
   }
- 
-  
- 
-  
+
   /*-------------------------------------------------------nav--------------------------------------------*/
   .navlinks {
     position: fixed;
@@ -608,25 +592,25 @@ border-style: solid;
   /*----------------------------------------SERVICES-----------------------------------------------------*/
   #services {
     margin: 30px;
-    
+    margin-top: 0;
+    padding-top: 0%;
   }
   #services .sub-title {
-  display: flex;
-  justify-content: center;
- font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
   }
   .services-list {
     display: flex;
     margin-top: 30px;
     justify-content: center;
     flex-wrap: wrap;
-   
   }
   .services-list div {
     padding: 20px 20px 20px 30px;
     font-size: 13px;
     font-weight: 300;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
   .services-list div i {
     font-size: 40px;
@@ -634,91 +618,85 @@ border-style: solid;
   .services-list div h3 {
     font-size: 20px;
   }
-  .services{
+  .services {
     margin-left: 12vw;
     font-size: 30px;
     margin-bottom: 10px;
   }
- 
-.work{
-margin-bottom: 20px;
-}
 
-
-/*---------------------------------------------------------------------Contact--------------------------------------*/
-
-
-.contact-right form{
-  margin-top: 25px;
-margin-right: 0;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
- }
-form input, form textarea{
- outline: none;
- background: #262626;
- margin: 10px 0;
- width: 70vw;
- padding: 15px;
- color: white;
- font-size: 18px;
- border-radius: 7px;
-border-width: 2px;
-border-style: solid;
-}
-.socialiconsflexbox{
-  display: flex;
-  justify-content: center;
-}
-.btn2class{
-  display: flex;
-  justify-content: center;
-  margin-right: 9vw;
-}
-.contact-left{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-left: 2vw;
+  .work {
+    margin-bottom: 20px;
   }
-  #contact .row{
-    display: flex;
-    margin-top: 8vh;
-   }
-  
-  .contact-left h2{
- margin-bottom: 10px;
-    font-size: 30px;
-  }
-  .h2pos{
+
+  /*---------------------------------------------------------------------Contact--------------------------------------*/
+
+  .contact-right form {
+    margin-top: 25px;
+    margin-right: 0;
     display: flex;
     justify-content: center;
-   
+    flex-wrap: wrap;
   }
-  .contact-left p{
+  form input,
+  form textarea {
+    outline: none;
+    background: #262626;
+    margin: 10px 0;
+    width: 70vw;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .socialiconsflexbox {
+    display: flex;
+    justify-content: center;
+  }
+  .btn2class {
+    display: flex;
+    justify-content: center;
+    margin-right: 9vw;
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: 2vw;
+  }
+  #contact .row {
+    display: flex;
+    margin-top: 8vh;
+  }
+
+  .contact-left h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .h2pos {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-left p {
     margin: 10px;
     font-size: 13px;
     display: flex;
-    
   }
-  .contact-left p i{
+  .contact-left p i {
     color: white;
     margin-right: 10px;
-    font-size: 20px; 
+    font-size: 20px;
   }
-  .awful{
-margin-left: 6vw;
+  .awful {
+    margin-left: 6vw;
   }
-  .btn2{
-    text-decoration: none;
+  .btn2 {
     padding: 10px 35px;
     border-radius: 5px;
     color: white;
-    transition: background 0.1s;
     border: 1px solid white;
     text-align: center;
-    }
-  
+  }
 }
