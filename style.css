@@ -254,11 +254,16 @@ h2 {
   position: relative;
   overflow: hidden;
   transition: transform 0.5s;
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
 }
 .work img {
   border-radius: 10px;
   display: block;
   width: 230px;
+  overflow: hidden;
+  
 }
 .layer {
   width: 100%;
