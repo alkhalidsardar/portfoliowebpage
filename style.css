@@ -116,16 +116,18 @@ nav .icons {
   margin-bottom: 10vh;
 }
 .column1 {
-  background-color: #454545;
+  
   border-radius: 10px;
   margin-left: 2vw;
   height: 360px;
+  
+  
 }
 .column1 img {
   height: 360px;
-  transform: rotate(-90deg);
   border-radius: 15px;
-  border: 10px solid white;
+  border-right: 20px solid white;
+  border-left: 20px solid white;
 }
 .column2 {
   flex-basis: 56%;
@@ -173,7 +175,7 @@ nav .icons {
 }
 .tabcontent ul li span {
   font-size: 14px;
-  color: goldenrod;
+  color: #ff004f;
 }
 /*hiding tab content*/
 .tabcontent {
@@ -501,7 +503,7 @@ form textarea {
   }
 
   .column1 {
-    background-color: #454545;
+   
     border-radius: 10px;
     margin-left: 0;
     height: 240px;
@@ -510,9 +512,10 @@ form textarea {
   }
   .column1 img {
     height: 240px;
-    transform: rotate(-90deg);
+    border-right: 16px solid white;
+    border-left: 16px solid white;
     border-radius: 10px;
-    border: 10px solid white;
+    
   }
 
   .column2 h3 {
@@ -600,8 +603,8 @@ form textarea {
   /*-------------------------------------------------------nav--------------------------------------------*/
   .navlinks {
     position: fixed;
-    background-color: black;
-    color: white;
+    background-color: #ffffffd5;
+    color: black;
     height: 100vh;
     width: 200px;
     z-index: 2;
@@ -609,6 +612,12 @@ form textarea {
     top: 0;
     right: -200px;
     transition: 0.5s; /*for sidebar*/
+  }
+  nav ul li a{
+    color: black;
+  }
+  nav ul li a:hover{
+    color: black;
   }
   /*menu icon*/
   nav .icons {
@@ -628,16 +637,16 @@ form textarea {
   .h2flex{
     display: flex;
     justify-content: center;
-
+    margin-right: 6vw;
   }
  #services .container h2{
-font-size: 30px;
+font-size: 35px;
  }
   .services-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 19px;
+    margin-top: 10px;
    
   }
   .services-list div {
@@ -650,7 +659,7 @@ font-size: 30px;
     color: black;
   }
   .services-list div i {
-    font-size: 30px;
+    font-size: 27px;
   }
   .services-list div h3 {
     font-size: 20px;
@@ -684,8 +693,8 @@ font-size: 30px;
   /*---------------------------------------------------------------------Contact--------------------------------------*/
 
   .contact-right form {
-    margin-top: 25px;
-    margin-right: 0;
+    margin-top: 20px;
+   
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -694,11 +703,11 @@ font-size: 30px;
   form textarea {
     outline: none;
     background: #262626;
-    margin: 10px 0;
-    width: 70vw;
+    margin: 7px 0;
+    width: 55vw;
     padding: 15px;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 7px;
     border-width: 2px;
     border-style: solid;
@@ -706,6 +715,11 @@ font-size: 30px;
   .socialiconsflexbox {
     display: flex;
     justify-content: center;
+    margin-right: 1vw;
+  }
+  .socialicons i {
+    margin-right: 24px;
+    font-size: 30px;
   }
   .btn2class {
     display: flex;
@@ -731,9 +745,11 @@ font-size: 30px;
   .h2pos {
     display: flex;
     justify-content: center;
+    margin-right: 16vw;
+    margin-bottom: 5px;
   }
   .contact-left p {
-    margin: 10px;
+    margin: px;
     font-size: 13px;
     display: flex;
   }
@@ -743,13 +759,26 @@ font-size: 30px;
     font-size: 20px;
   }
   .awful {
-    margin-left: 6vw;
+    margin-left: 4vw;
   }
   .btn2 {
-    padding: 10px 35px;
+    margin-left: 3vw;
+    padding: 10px 50px;
     border-radius: 5px;
     color: white;
-    border: 1px solid white;
+    border: 2px solid #ff004f;
     text-align: center;
   }
+  .btn3 {
+    margin-top: 5px;
+    text-decoration: none;
+    padding: 12px 78px;
+    border-radius: 5px;
+    background-color: #000000c9;
+    color: white;
+    transition: background 0.1s;
+    border: 3px solid #ff004f;
+    text-align: center;
+    font-size: 20x;
+}
 }
