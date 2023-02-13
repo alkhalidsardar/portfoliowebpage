@@ -66,16 +66,7 @@ nav ul li a:hover {
 nav .icons {
   display: none;
 }
-.portfolio{
-  padding: 4px 15px;
-  color: black;
-  background-color: white;
-  border-radius: 6px;
-}
-.portfolio:hover{
-background-color: #000000;
- color: white;
-}
+
 
 
 /*================================================================ BUTTONS ============================================*/
@@ -1257,6 +1248,7 @@ background-color: #000000;
       }
       /*menu icon*/
       nav .icons {
+        font-size: 30px;
         color: white;
         display: block;
         margin: 10px;
