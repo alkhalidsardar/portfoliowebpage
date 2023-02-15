@@ -364,12 +364,14 @@ form textarea {
     margin-left: 10px;
     line-height: 1.1;
   }
-  .bye {
-    margin-top: 73px;
-    margin-left: -121px;
-    font-size: 12px;
-    word-wrap: break-word;
-  }
+    .bye {
+  margin-top: 73px;
+  margin-left: -113px;
+  font-size: 12px;
+  word-wrap: break-word;
+  margin-right: 10px;
+}
+  
   img {
     height: 110px;
     border: 7px solid white;
