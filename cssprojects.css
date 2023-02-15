@@ -205,6 +205,13 @@ transition: 0.5s;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
 }
+.h2flex {
+  top: 5vh;
+  margin-bottom: 9vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
  .webpage {
   margin-bottom: 8vh;
   position: relative;

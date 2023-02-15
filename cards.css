@@ -420,6 +420,9 @@ background-color: #000000;
   font-family: 'Times New Roman', Times, serif;
   font-size: 4vh;
 }
+#cards .h2flex{
+  margin: 5vh 5vh 0vh 5vh;
+}
 
 .cardlist1 {
   display: flex;
@@ -429,7 +432,7 @@ background-color: #000000;
 
 .cards {
   margin: 12px;
-  height: 70vh;
+  height: 60vh;
   width: 60vh;
   margin-bottom: 10vh;
 }

@@ -11,12 +11,18 @@ html{
 body {
   background-color: black;
   color: white;
+ 
+ 
 }
 /*-----------------------------------------------------HEADER------------------------------------------------------*/
 
 #header {
+  background-image: url(bgwalp.jpg);
+  background-attachment: fixed;
+  background-size: contain;
   width: 100%;
   height: 100vh;
+
 }
 .header img {
   height: 90vh;
@@ -699,16 +705,15 @@ font-size: 35px;
     justify-content: center;
     flex-wrap: wrap;
   }
-  form input,
-  form textarea {
+  form input, form textarea {
     outline: none;
     background: #262626;
     margin: 7px 0;
-    width: 55vw;
+    width: 52vw;
     padding: 15px;
     color: white;
     font-size: 15px;
-    border-radius: 7px;
+    border-radius: 4px;
     border-width: 2px;
     border-style: solid;
   }

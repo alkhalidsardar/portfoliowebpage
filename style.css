@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +23,7 @@ html{
 }
 /*================================================================== Navbar ============================================*/
 nav {
-    background-color: black;
+    background-color: rgb(1, 0, 30);
   padding-left: 5%;
   padding-right: 10%;
   padding-top: 10px;
@@ -62,6 +63,268 @@ nav .icons {
   display: none;
 }
 
+ /*================================================================ HOME ============================================*/
+
+ #home{
+  width: 100%;
+  height: 100vh;
+  background-color: ;
+  display: flex;
+  flex-direction: column;
+  background-image: url(bgwalp.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+ }
+.container{
+  margin-top: 7vh;
+  margin-left: 18vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.containerleft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .containerright{
+  margin-top: 4vh;
+  margin-left: 2vw;
+margin-right: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+ 
+ }
+ .containerright .hi{
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+ }
+ .bye{
+  
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #fff;
+ font-size: 15px;
+ word-wrap: break-word;
+ }
+
+
+ img{
+  height: 170px;
+  border: 10px solid white;
+  width: 170px;
+  border-radius: 50%;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+ }
+
+ /*================================================================== Bottom Content ============================================*/
+ .bottomcontent{
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .leftcontent{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  height:28vh;
+  width:27vw;
+  box-shadow: 0px 30px 40px -20px black;
+  border-radius: 7px;
+   }
+   .icont{
+    display: flex; 
+   }
+   .icont p{
+    margin-top: 14px;
+color: rgb(47, 47, 47);
+font-size: 25px;
+  font-weight: 900;
+   }
+ 
+ .rightcontent{
+background-color: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 10vw;
+height:31vh;
+width:27vw;
+box-shadow: 0px 30px 40px -20px black;
+border-radius: 10px;
+ }
+
+ .ions{
+font-size: 35px;
+color: rgb(142, 23, 198);
+margin-right: 5px;
+margin-top: 10px;
+ }
+  .leftcontent a{
+text-decoration: none;
+padding: 5px 128px;
+border-radius: 5px;
+color: #fff;
+background-color: rgb(142, 23, 198) ;
+transition: 0.5s;
+ }
+ .rightcontent a{
+  text-decoration: none;
+  padding: 5px 129px;
+border-radius: 5px;
+color: #fff;
+background-color: rgb(142, 23, 198) ;
+transition: 0.5s;
+   }
+   .rightcontent a:hover{
+    background-color: black;
+   }
+   .leftcontent a:hover{
+    background-color: black;
+   }
+
+
+ .preal{
+  margin-left: 18px;
+  margin-right: 6px;
+  margin-bottom: 19px;
+  word-wrap: break-word;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  color: rgb(101, 1, 101);
+ }
+
+ /*-----------------------------------------------------CONTACT--------------------------------------------------------------------------*/
+
+#contact .row {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10vh;
+  padding-bottom: 8vh;
+ 
+}
+
+.contact-left p {
+  font-size: 18px;
+  display: flex;
+  color: #fff;
+}
+
+.contact-left p i {
+  color: white;
+  margin-right: 5px;
+  font-size: 25px;
+}
+.contact-left h2 {
+  color: #fff;
+  margin-left: 0vw;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.contact-left p i {
+  color: goldenrod;
+}
+.socialiconsflexbox {
+  display: flex;
+  margin: 20px;
+  margin-left: 0;
+  justify-content: space-between;
+}
+.socialicons i {
+  margin-right: 15px;
+  font-size: 28px;
+  color: aliceblue;
+  transition: font-size 0.5s;
+}
+.socialicons i:hover {
+  color: goldenrod;
+  font-size: 32px;
+}
+.btn2class {
+  margin-top: 2vh;
+}
+.btn2 {
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: white;
+  transition: background 0.1s;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.btn2:hover {
+  background: #ff004f;
+  border: 1px solid black;
+}
+.contact-right form {
+  margin-right: 2vw;
+}
+form input,
+form textarea {
+  outline: none;
+  font-family: "Times New Roman", Times, serif;
+  background: #262626;
+  margin: 13px 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  border-radius: 7px;
+  border-width: 2px;
+  border-style: solid;
+}
+.btn3 {
+  margin-top: 5px;
+  text-decoration: none;
+  padding: 12px 50px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: background 0.1s;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 15px;
+}
+.btn3:hover {
+  background: #ff004f;
+  border: 1px solid black;
+}
+
+/*================================================================== Footer ============================================*/
+
+.footeritems{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footeritems a{
+  margin-left: 30px;
+  color: black;
+  opacity: 0.9;
+  font-weight: 600;
+  text-decoration: none;
+}
+.copyright {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+  padding: 1vh;
+  font-weight: 600;
+}
+
 
 
 
@@ -92,6 +355,228 @@ nav .icons {
         margin: 10px;
         cursor: pointer;
       }
+      /*================================================================ CONTENT ============================================*/
+
+#home{
+  background-image: url(bgwalpmobile.jpg);
+  height: 115vh;
+  
+}
+
+.container {
+  margin-top: 10vh;
+  margin-left: 0vw;
+}
+.containerright{
+  margin-right: 4vw;
+  margin-left: 0;
+}
+.containerright .hi {
+  font-size: 21px;
+  margin-left: 10px;
+line-height: 1.1;
+}
+.bye {
+  margin-top: 73px;
+  margin-left: -121px;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+      img {
+        height: 110px;
+        border: 7px solid white;
+        width: 110px;
+        border-radius: 50%;
+        box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+        margin-left: 7vw;
+      }
+      .bottomcontent {
+        flex-direction: column;
+        margin-top: 10vh;
+      }
+      .leftcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 21vh;
+        width: 58vw;
+        margin-right: 25vw;
+        margin-bottom: 5vh;
+      }
+      .leftcontent a {
+        padding: 5px 25px;
+      }
+      .preal {
+        margin-left: 15px;
+        margin-right: 4px;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+        font-size: 10px;
+      }
+      .icont p {
+        margin-top: 21px;
+        color: rgb(47, 47, 47);
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+      }
+      /*----------------------------------------------------------right-----------------------------------------------------*/
+
+      .rightcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 23vh;
+        width: 64vw;
+        margin-bottom: 5vh;
+        margin-left: 23vw;
+      }
+      .rightcontent a {
+        padding: 5px 25px;
+      }
+      .preal {
+        margin-left: 15px;
+        margin-right: 4px;
+        margin-bottom: 18px;
+        word-wrap: break-word;
+        font-size: 12px;
+      }
+      .ions {
+        font-size: 32px;
+        color: rgb(142, 23, 198);
+        margin-right: 5px;
+        margin-top: 14px;
+      }
+      .icont p {
+        margin-top: 22px;
+        color: rgb(47, 47, 47);
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+      }
+
+       /*---------------------------------------------------------------------Contact--------------------------------------*/
+
+
+       #contact .row {
+        display: flex;
+        justify-content: center;
+flex-wrap: wrap;
+        margin-top: 0vh;
+        padding-top: 5vh;
+      }
+  .contact-right form {
+    margin-top: 20px;
+    margin-right: 4vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  form input,
+  form textarea {
+    outline: none;
+    background: #262626;
+    margin: 7px 0;
+    width: 47vw;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .socialiconsflexbox {
+    display: flex;
+    justify-content: center;
+    margin-right: 1vw;
+  }
+  .socialicons i {
+    margin-right: 24px;
+    font-size: 30px;
+  }
+  .btn2class {
+    display: flex;
+    justify-content: center;
+    margin-right: 9vw;
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: 0vw;
+  }
+ 
+
+  .contact-left h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .h2pos {
+    display: flex;
+    justify-content: center;
+    margin-right: 16vw;
+    margin-bottom: 5px;
+  }
+  .contact-left p {
+    margin: px;
+    font-size: 13px;
+    display: flex;
+  }
+  .contact-left p i {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .awful {
+    margin-left: 9px;
+  }
+  .btn2 {
+    margin-left: 4vw;
+    padding: 10px 57px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid #ff004f;
+    text-align: center;
+  }
+  .btn3 {
+    margin-top: 17px;
+    text-decoration: none;
+    padding: 12px 73px;
+    border-radius: 5px;
+    background-color: #000000c9;
+    color: white;
+    transition: background 0.1s;
+    border: 3px solid #ff004f;
+    text-align: center;
+    font-size: 20x;
+  }  
+  .copyright{
+    margin-top: 0vh;
+  }
+  .footeritems p{
+    font-size: 10px;
+  }
+  .footeritems a{
+    font-size: 10px;
+    margin-left: 18px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
