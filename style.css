@@ -215,7 +215,7 @@ img {
 /*-----------------------------------------------------CONTACT--------------------------------------------------------------------------*/
 
 #contact .row {
-  background-color: #000000;
+  background-color: rgb(1, 0, 30);
   display: flex;
   justify-content: space-around;
   padding-top: 10vh;
@@ -282,7 +282,7 @@ form input,
 form textarea {
   outline: none;
   font-family: "Times New Roman", Times, serif;
-  background: #262626;
+  background: #000000;
   margin: 13px 0;
   width: 100%;
   padding: 15px;
@@ -328,7 +328,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(97, 97, 97, 0.998);
+  background-color: rgba(253, 248, 248, 0.998);
   color: black;
   opacity: 0.9;
   padding: 1vh;
@@ -364,8 +364,8 @@ form textarea {
   /*================================================================ CONTENT ============================================*/
 
   #home {
-    background-image: url(bgwalpmobile.jpg);
-    height: 100vh;
+    background-image: url(zed3.jpg);
+    height: 104vh;
   }
 
   .container {
@@ -378,7 +378,7 @@ form textarea {
   }
   .containerright .hi {
     font-size: 21px;
-    margin-left: 10px;
+    margin-left: 20px;
     line-height: 1.1;
   }
     .bye {
@@ -409,7 +409,7 @@ form textarea {
     height: 21vh;
     width: 58vw;
     margin-right: 25vw;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
   }
   .leftcontent a {
     padding: 5px 25px;
@@ -482,7 +482,7 @@ form textarea {
   form input,
   form textarea {
     outline: none;
-    background: #262626;
+    background: #000000;
     margin: 7px 0;
     width: 47vw;
     padding: 15px;
