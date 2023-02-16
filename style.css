@@ -60,6 +60,23 @@ nav ul li a:hover {
 nav .icons {
   display: none;
 }
+nav ul li a::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: lightcoral;
+  display: flex;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav .icons {
+  display: none;
+}
 
 /*================================================================ HOME ============================================*/
 
@@ -311,7 +328,7 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(97, 97, 97, 0.998);
   color: black;
   opacity: 0.9;
   padding: 1vh;

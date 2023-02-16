@@ -59,22 +59,24 @@ nav ul li a {
 /*adding hover effects to nav items*/
 
 
+nav ul li a::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: lightcoral;
+  display: flex;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
 nav ul li a:hover {
-  color: red;
+  color: white;
 }
 nav .icons {
   display: none;
 }
-.portfolio{
-  padding: 4px 15px;
-  color: black;
-  background-color: white;
-  border-radius: 6px;
-}
-.portfolio:hover{
-background-color: #000000;
- color: white;
-}
+
 
 
 /*================================================================== Webpages ====================================*/
@@ -165,6 +167,34 @@ transition: 0.5s;
     transform: scale(1.1);
   }
 
+  /*================================================================== Footer ============================================*/
+
+.footeritems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footeritems a {
+  font-size: 14px;
+  margin-left: 30px;
+color: white;
+  opacity: 0.9;
+  font-weight: 600;
+  text-decoration: none;
+}
+.copyright {
+  font-size: 14px;
+  margin-top: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(59, 59, 59, 0.998);
+  color: white;
+  opacity: 0.9;
+  padding: 1vh;
+  font-weight: 600;
+}
+
   /*================================================================== Media ============================================*/
 /*================================================================== Media ============================================*/
 
@@ -230,5 +260,15 @@ transition: 0.5s;
 }
 .h3flex {
   margin-bottom: 9vh;
+}
+/*============================================================================== Footer ================================================*/
+.footeritems a {
+  font-size: 9px;
+  margin-left: 10px;
+}
+.copyright {
+  font-size: 9px;
+  padding: 2vh;
+  font-weight: 600;
 }
 }

@@ -59,22 +59,24 @@ nav ul li a {
 /*adding hover effects to nav items*/
 
 
+nav ul li a::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: lightcoral;
+  display: flex;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
 nav ul li a:hover {
-  color: red;
+  color: white;
 }
 nav .icons {
   display: none;
 }
-.portfolio{
-  padding: 4px 15px;
-  color: black;
-  background-color: white;
-  border-radius: 6px;
-}
-.portfolio:hover{
-background-color: #000000;
- color: white;
-}
+
 
 
 /*==================================================================  CARDS ============================================*/
@@ -99,7 +101,9 @@ background-color: #000000;
   
   .cards{
     height: 70vh;
-    width: 70vh;
+    width: 60vh;
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,13 +117,14 @@ background-color: #000000;
     margin-top: 10vh;
   }
   .cardbuttons p{
-    padding: 10px 40px;
+    padding: 10px 25px;
+    border-radius: 5px;
     background-color: #5ea810;
     color: var(--white);
     margin-right: 20px;
   }
   .cardbuttons a{
-    padding: 10px 40px;
+    padding: 10px 28px;
     background-color: black;
     color: var(--white);
     text-decoration: none;
@@ -379,8 +384,187 @@ background-color: #000000;
     transition: transform 0.3s ease-out;
   }
 
+  /*================================================================== Footer ============================================*/
 
-  /*================================================================== Media ============================================*/
+.footeritems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footeritems a {
+  font-size: 14px;
+  margin-left: 30px;
+color: white;
+  opacity: 0.9;
+  font-weight: 600;
+  text-decoration: none;
+}
+.copyright {
+  font-size: 14px;
+  margin-top: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(59, 59, 59, 0.998);
+  color: white;
+  opacity: 0.9;
+  padding: 1vh;
+  font-weight: 600;
+}
+
+
+  /*================================================================== CARD 3 ============================================*/
+
+#pricecard{
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+  .h3flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.h3flex h3{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+  #pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0px 50px;
+    margin-top: 70px;
+  }
+  .single-card {
+    flex-basis: calc(100% / 3);
+    padding: 20px;
+    /* border: 2px solid red; */
+  }
+  .single-card .wrapper {
+    background-color: white;
+    height: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 15px;
+    transition: 0.4s;
+  }
+  .single-card .wrapper:hover {
+    transform: translateY(-13px);
+    /* box-shadow: 0px 5px 8px 1px rgba(23, 23, 23, 0.6); */
+  }
+  .single-card h3 {
+    text-align: center;
+    font-weight: 500;
+  }
+  .single-card h1 {
+    margin: 15px 0px;
+    margin-bottom: 18px;
+    font-size: 32px;
+  }
+  .single-card li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    letter-spacing: 0.4px;
+  }
+  
+  .single-card i.fas {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .single-card span {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .single-card button {
+    height: 40px;
+    width: 100%;
+    background-color: #202842;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 30px;
+    transition: 0.3s;
+  }
+  .single-card button:hover {
+    background: #395dd4;
+    font-weight: 500;
+    box-shadow: #395dd46a 0px 0px 16px;
+  }
+  .single-card .popular {
+    position: relative;
+  }
+  
+  .single-card .popular::before {
+    content: "Featured";
+    position: absolute;
+    top: 18px;
+    color: #111;
+    font-weight: 500;
+    right: -45px;
+    background: rgb(232, 228, 0);
+    transform: rotate(45deg);
+    font-size: 10px;
+    padding: 0px 50px;
+    box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.3);
+  }
+  .popular.wrapper {
+    color: white;
+    background: #192038;
+    /* background: #002a20; */
+    overflow: hidden;
+  }
+  .popular.wrapper button,
+  .popular.wrapper i {
+    color: #202842;
+  
+    background: white;
+  }
+  .popular.wrapper button:hover {
+    color: #000;
+    /* font-weight: 700; */
+    background: rgb(255, 255, 0);
+    box-shadow: rgba(229, 255, 0, 0.1) 0px 0px 16px;
+  }
+  .disable span {
+    color: #afafaf;
+  }
+  .disable i.fas {
+    background: #c4c4c4;
+  }
+  @media screen and (max-width: 992px) {
+    #pricing {
+      padding: 0px 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .single-card {
+      flex-basis: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .single-card {
+      flex-basis: calc(100%);
+    }
+  }
+  /*================================================================== MAIN MEDIA ============================================*/
 /*================================================================== Media ============================================*/
 
 @media (max-width: 700px){
@@ -418,7 +602,7 @@ background-color: #000000;
 /*================================================================ CARDS ============================================*/
 #cards h2 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 4vh;
+  font-size: 25px;
 }
 #cards .h2flex{
   margin: 5vh 5vh 0vh 5vh;
@@ -445,7 +629,29 @@ background-color: #000000;
   padding: 15px;
 }
 
+.footeritems a {
+  font-size: 9px;
+  margin-left: 10px;
+}
+.copyright {
+  font-size: 9px;
+  padding: 2vh;
+  font-weight: 600;
+}
 
+/*================================================================ price  ============================================*/
+#pricecard{
+  margin-top: 0vh;
+}
+#pricing{
+  flex-wrap: wrap;
+}
+.h3flex h3 {
+  font-size: 30px;
+}
+#pricing .cardbuttons{
+  margin-top: 2vh;
+}
 
 }
 
