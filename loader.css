@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --grayishBlue: hsl(229, 6%, 66%);
+  --white: #fff;
+  --grass: #458600;
+  --black: #000;
+  --color: #3c3163;
+}
+
+/*================================================================== Header ============================================*/
+
+#header {
+  width: 100%;
+  height: 100vh;
+}
+/*================================================================== Navbar ============================================*/
+nav {
+    background-color: black;
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+}
+span {
+  color: RED;
+}
+nav ul li {
+  display: inline-flex;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+/*adding hover effects to nav items*/
+
+
+
+nav ul li a::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: lightcoral;
+  display: flex;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav .icons {
+  display: none;
+}
+
+ /*================================================================== Header  ============================================*/
+ .h1flex{
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ h1{
+  font-size: 8vh;
+ }
+
+  /*================================================================== CARD ============================================*/
+  .flexcard{
+    margin-right: 5vh;
+    margin-left: 5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cardarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh;
+    height: 55vh;
+    width: 55vh;
+  
+  }
+  .card{
+    height: 45vh;
+    width: 50vh;
+    margin-bottom: 5vh;
+    border: 1px solid rgb(174, 174, 174);
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
+  }
+  .cardbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .cardbtns p{
+    font-size: 15px;
+text-decoration: none;
+color: var(--white);
+background-color: var(--grass);
+padding: 7px 20px;
+border-radius: 5px;
+margin-right: 10px;
+transition: 0.5s;
+  }
+  .cardbtns a{
+    font-size: 15px;
+text-decoration: none;
+color: var(--white);
+background-color: var(--black);
+padding: 7px 20px;
+border-radius: 5px;
+margin-right: 10px;
+transition: 0.5s;
+  }
+  .cardbtns a:hover{
+background-color: var(--white);
+color: var(--black);
+  }
+
+   /*================================================================== CARD ! ============================================*/
+
+   .loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: '';
+}
+
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #0011ff;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.1em 5.1em;
+  transform-origin: 5.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #0011ff;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 4.9em;
+  -webkit-transform-origin: 0.1em 5.1em;
+  transform-origin: 0.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+    /*================================================================== CARD 2 ============================================*/
+
+    .loadingspinner {
+      --square: 26px;
+      --offset: 30px;
+      --duration: 2.4s;
+      --delay: 0.2s;
+      --timing-function: ease-in-out;
+      --in-duration: 0.4s;
+      --in-delay: 0.1s;
+      --in-timing-function: ease-out;
+      width: calc( 3 * var(--offset) + var(--square));
+      height: calc( 2 * var(--offset) + var(--square));
+      padding: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 70px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    .loadingspinner div {
+      display: inline-block;
+      background: darkorange;
+        /*background: var(--text-color);*/
+        /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);*/
+      border: none;
+      border-radius: 2px;
+      width: var(--square);
+      height: var(--square);
+      position: absolute;
+      padding: 0px;
+      margin: 0px;
+      font-size: 6pt;
+      color: black;
+    }
+    
+    .loadingspinner #square1 {
+      left: calc( 0 * var(--offset) );
+      top: calc( 0 * var(--offset) );
+      animation: square1 var(--duration) var(--delay) var(--timing-function) infinite,
+                   squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+    }
+    
+    .loadingspinner #square2 {
+      left: calc( 0 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square2 var(--duration) var(--delay) var(--timing-function) infinite,
+                  squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+    }
+    
+    .loadingspinner #square3 {
+      left: calc( 1 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square3 var(--duration) var(--delay) var(--timing-function) infinite,
+                   squarefadein var(--in-duration) calc(2 * var(--in-delay)) var(--in-timing-function) both;
+    }
+    
+    .loadingspinner #square4 {
+      left: calc( 2 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square4 var(--duration) var(--delay) var(--timing-function) infinite,
+                   squarefadein var(--in-duration) calc(3 * var(--in-delay)) var(--in-timing-function) both;
+    }
+    
+    .loadingspinner #square5 {
+      left: calc( 3 * var(--offset) );
+      top: calc( 1 * var(--offset) );
+      animation: square5 var(--duration) var(--delay) var(--timing-function) infinite,
+                   squarefadein var(--in-duration) calc(4 * var(--in-delay)) var(--in-timing-function) both;
+    }
+    
+    @keyframes square1 {
+      0% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    
+      8.333% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      100% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+    
+    @keyframes square2 {
+      0% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      8.333% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+    
+      16.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+    
+      25.00% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      83.33% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      91.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    
+      100% {
+        left: calc( 0 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    }
+    
+    @keyframes square3 {
+      0%,100% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      16.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      25.00% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    
+      33.33% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    
+      41.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      66.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      75.00% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+    
+      83.33% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+    
+      91.67% {
+        left: calc( 1 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+    
+    @keyframes square4 {
+      0% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      33.33% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      41.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+    
+      50.00% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 2 * var(--offset) );
+      }
+    
+      58.33% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      100% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+    
+    @keyframes square5 {
+      0% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      50.00% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      58.33% {
+        left: calc( 3 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    
+      66.67% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 0 * var(--offset) );
+      }
+    
+      75.00% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    
+      100% {
+        left: calc( 2 * var(--offset) );
+        top: calc( 1 * var(--offset) );
+      }
+    }
+    
+    @keyframes squarefadein {
+      0% {
+        transform: scale(0.75);
+        opacity: 0.0;
+      }
+    
+      100% {
+        transform: scale(1.0);
+        opacity: 1.0;
+      }
+    }
+     /*================================================================== CARD 3 ============================================*/
+
+     .newtons-cradle {
+      --uib-size: 50px;
+      --uib-speed: 1.2s;
+      --uib-color: #474554;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--uib-size);
+      height: var(--uib-size);
+     }
+     
+     .newtons-cradle__dot {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 25%;
+      transform-origin: center top;
+     }
+     
+     .newtons-cradle__dot::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 25%;
+      border-radius: 50%;
+      background-color: var(--uib-color);
+     }
+     
+     .newtons-cradle__dot:first-child {
+      animation: swing var(--uib-speed) linear infinite;
+     }
+     
+     .newtons-cradle__dot:last-child {
+      animation: swing2 var(--uib-speed) linear infinite;
+     }
+     
+     @keyframes swing {
+      0% {
+       transform: rotate(0deg);
+       animation-timing-function: ease-out;
+      }
+     
+      25% {
+       transform: rotate(70deg);
+       animation-timing-function: ease-in;
+      }
+     
+      50% {
+       transform: rotate(0deg);
+       animation-timing-function: linear;
+      }
+     }
+     
+     @keyframes swing2 {
+      0% {
+       transform: rotate(0deg);
+       animation-timing-function: linear;
+      }
+     
+      50% {
+       transform: rotate(0deg);
+       animation-timing-function: ease-out;
+      }
+     
+      75% {
+       transform: rotate(-70deg);
+       animation-timing-function: ease-in;
+      }
+     }
+     
+      /*================================================================== CARD ! ============================================*/
+       /*================================================================== CARD ! ============================================*/
+        /*================================================================== CARD ! ============================================*/
+         /*================================================================== CARD ! ============================================*/
+          /*================================================================== CARD ! ============================================*/
+           /*================================================================== CARD ! ============================================*/
+            /*================================================================== CARD ! ============================================*/
+             /*================================================================== CARD ! ============================================*/
+              /*================================================================== CARD ! ============================================*/
+              
+
+  /*================================================================== Footer ============================================*/
+
+  .footeritems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footeritems a {
+    font-size: 14px;
+    margin-left: 30px;
+  color: white;
+    opacity: 0.9;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .copyright {
+    font-size: 14px;
+    margin-top: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(59, 59, 59, 0.998);
+    color: white;
+    opacity: 0.9;
+    padding: 1vh;
+    font-weight: 600;
+  }
+
+
+ /*================================================================== Media ============================================*/
+/*================================================================== Media ============================================*/
+
+@media (max-width: 700px){
+
+    /*================================================================ Nav ============================================*/
+    .navlinks {
+        position: fixed;
+        background-color: black;
+  
+        height: 100vh;
+        width: 200px;
+        z-index: 2;
+        text-align: left;
+        top: 0;
+        right: -200px;
+        transition: 0.5s; /*for sidebar*/
+      }
+      nav ul li a{
+        color: white;
+      }
+      nav ul li a:hover{
+        color: red;
+      }
+      /*menu icon*/
+      nav .icons {
+        font-size: 30px;
+        color: white;
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .footeritems a {
+        font-size: 9px;
+        margin-left: 10px;
+      }
+      .copyright {
+        font-size: 9px;
+        padding: 2vh;
+        font-weight: 600;
+      }
+    }
