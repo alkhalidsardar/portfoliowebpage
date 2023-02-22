@@ -109,12 +109,15 @@ nav .icons {
     align-items: center;
     flex-direction: column;
     margin: 5vh;
-    height: 55vh;
-    width: 55vh;
+    height: 53vh;
+    width: 50vh;
   
   }
   .card{
-    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47vh;
     width: 50vh;
     margin-bottom: 5vh;
     border: 1px solid rgb(174, 174, 174);
@@ -152,6 +155,7 @@ transition: 0.5s;
 background-color: var(--white);
 color: var(--black);
   }
+ 
 
    /*================================================================== CARD ! ============================================*/
 
@@ -165,7 +169,7 @@ color: var(--black);
   color: #ffffff;
   font-size: 11px;
   text-indent: -99999em;
-  margin: 55px auto;
+  
   position: relative;
   width: 10em;
   height: 10em;
@@ -235,8 +239,7 @@ color: var(--black);
       padding: 0px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 70px;
-      margin-bottom: 30px;
+    
       position: relative;
     }
     
@@ -470,10 +473,10 @@ color: var(--black);
      /*================================================================== CARD 3 ============================================*/
 
      .newtons-cradle {
-      --uib-size: 50px;
+      --uib-size: 100px;
       --uib-speed: 1.2s;
-      --uib-color: #474554;
-      position: relative;
+      --uib-color: #493c9e;
+ 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -541,9 +544,339 @@ color: var(--black);
       }
      }
      
-      /*================================================================== CARD ! ============================================*/
-       /*================================================================== CARD ! ============================================*/
-        /*================================================================== CARD ! ============================================*/
+      /*================================================================== CARD 4 ============================================*/
+      .loader4 {
+        position: relative;
+        width: 120px;
+        height: 90px;
+     
+       
+      }
+      
+      .loader4:before {
+        content: "";
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #439f2a;
+        animation: loading-bounce 0.5s ease-in-out infinite alternate;
+      }
+      
+      .loader4:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 7px;
+        width: 45px;
+        border-radius: 4px;
+        box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+        animation: loading-step 1s ease-in-out infinite;
+      }
+      
+      @keyframes loading-bounce {
+        0% {
+          transform: scale(1, 0.7);
+        }
+      
+        40% {
+          transform: scale(0.8, 1.2);
+        }
+      
+        60% {
+          transform: scale(1, 1);
+        }
+      
+        100% {
+          bottom: 140px;
+        }
+      }
+      
+      @keyframes loading-step {
+        0% {
+          box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+                  0 10px 0 #d60909,
+                  -35px 50px 0 #1a8fb6,
+                  -70px 90px 0 #dfe618;
+        }
+      
+        100% {
+          box-shadow: 0 10px 0 #c81818,
+                  -35px 50px 0 #139dc0,
+                  -70px 90px 0 #bcdc2e,
+                  -70px 90px 0 rgba(215, 17, 17, 0);
+        }
+      }
+       /*================================================================== CARD 5 ============================================*/
+
+       #wifi-loader {
+        --background: #62abff;
+        --front-color: #4f29f0;
+        --back-color: #c3c8de;
+        --text-color: #414856;
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #wifi-loader svg {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #wifi-loader svg circle {
+        position: absolute;
+        fill: none;
+        stroke-width: 6px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transform: rotate(-100deg);
+        transform-origin: center;
+      }
+      
+      #wifi-loader svg circle.back {
+        stroke: var(--back-color);
+      }
+      
+      #wifi-loader svg circle.front {
+        stroke: var(--front-color);
+      }
+      
+      #wifi-loader svg.circle-outer {
+        height: 86px;
+        width: 86px;
+      }
+      
+      #wifi-loader svg.circle-outer circle {
+        stroke-dasharray: 62.75 188.25;
+      }
+      
+      #wifi-loader svg.circle-outer circle.back {
+        animation: circle-outer135 1.8s ease infinite 0.3s;
+      }
+      
+      #wifi-loader svg.circle-outer circle.front {
+        animation: circle-outer135 1.8s ease infinite 0.15s;
+      }
+      
+      #wifi-loader svg.circle-middle {
+        height: 60px;
+        width: 60px;
+      }
+      
+      #wifi-loader svg.circle-middle circle {
+        stroke-dasharray: 42.5 127.5;
+      }
+      
+      #wifi-loader svg.circle-middle circle.back {
+        animation: circle-middle6123 1.8s ease infinite 0.25s;
+      }
+      
+      #wifi-loader svg.circle-middle circle.front {
+        animation: circle-middle6123 1.8s ease infinite 0.1s;
+      }
+      
+      #wifi-loader svg.circle-inner {
+        height: 34px;
+        width: 34px;
+      }
+      
+      #wifi-loader svg.circle-inner circle {
+        stroke-dasharray: 22 66;
+      }
+      
+      #wifi-loader svg.circle-inner circle.back {
+        animation: circle-inner162 1.8s ease infinite 0.2s;
+      }
+      
+      #wifi-loader svg.circle-inner circle.front {
+        animation: circle-inner162 1.8s ease infinite 0.05s;
+      }
+      
+      #wifi-loader .text {
+        position: absolute;
+        bottom: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: lowercase;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+      }
+      
+      #wifi-loader .text::before, #wifi-loader .text::after {
+        content: attr(data-text);
+      }
+      
+      #wifi-loader .text::before {
+        color: var(--text-color);
+      }
+      
+      #wifi-loader .text::after {
+        color: var(--front-color);
+        animation: text-animation76 3.6s ease infinite;
+        position: absolute;
+        left: 0;
+      }
+      
+      @keyframes circle-outer135 {
+        0% {
+          stroke-dashoffset: 25;
+        }
+      
+        25% {
+          stroke-dashoffset: 0;
+        }
+      
+        65% {
+          stroke-dashoffset: 301;
+        }
+      
+        80% {
+          stroke-dashoffset: 276;
+        }
+      
+        100% {
+          stroke-dashoffset: 276;
+        }
+      }
+      
+      @keyframes circle-middle6123 {
+        0% {
+          stroke-dashoffset: 17;
+        }
+      
+        25% {
+          stroke-dashoffset: 0;
+        }
+      
+        65% {
+          stroke-dashoffset: 204;
+        }
+      
+        80% {
+          stroke-dashoffset: 187;
+        }
+      
+        100% {
+          stroke-dashoffset: 187;
+        }
+      }
+      
+      @keyframes circle-inner162 {
+        0% {
+          stroke-dashoffset: 9;
+        }
+        25% {
+          stroke-dashoffset: 0;
+        }
+        65% {
+          stroke-dashoffset: 106;
+        }
+        80% {
+          stroke-dashoffset: 97;
+        }
+        100% {
+          stroke-dashoffset: 97;
+        }
+      }
+      @keyframes text-animation76 {
+        0% {
+          clip-path: inset(0 100% 0 0);
+        }
+        50% {
+          clip-path: inset(0);
+        }
+        100% {
+          clip-path: inset(0 0 0 100%);
+        }
+      }
+       
+        /*================================================================== CARD 6 ============================================*/
+        .spinner {
+          position: relative;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+        
+        .spinner span {
+          position: absolute;
+          top: 50%;
+          left: var(--left);
+          width: 35px;
+          height: 7px;
+          background: #000000;
+          animation: dominos 1s ease infinite;
+          box-shadow: 2px 2px 3px 0px rgb(255, 255, 255);
+        }
+        
+        .spinner span:nth-child(1) {
+          --left: 80px;
+          animation-delay: 0.125s;
+        }
+        
+        .spinner span:nth-child(2) {
+          --left: 70px;
+          animation-delay: 0.3s;
+        }
+        
+        .spinner span:nth-child(3) {
+          left: 60px;
+          animation-delay: 0.425s;
+        }
+        
+        .spinner span:nth-child(4) {
+          animation-delay: 0.54s;
+          left: 50px;
+        }
+        
+        .spinner span:nth-child(5) {
+          animation-delay: 0.665s;
+          left: 40px;
+        }
+        
+        .spinner span:nth-child(6) {
+          animation-delay: 0.79s;
+          left: 30px;
+        }
+        
+        .spinner span:nth-child(7) {
+          animation-delay: 0.915s;
+          left: 20px;
+        }
+        
+        .spinner span:nth-child(8) {
+          left: 10px;
+        }
+        
+        @keyframes dominos {
+          50% {
+            opacity: 0.7;
+          }
+        
+          75% {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+        
+          80% {
+            opacity: 1;
+          }
+        }
+        
          /*================================================================== CARD ! ============================================*/
           /*================================================================== CARD ! ============================================*/
            /*================================================================== CARD ! ============================================*/
@@ -613,6 +946,52 @@ color: var(--black);
         margin: 10px;
         cursor: pointer;
       }
+/*================================================================ header ============================================*/
+      h1 {
+        font-size: 4vh;
+      }
+      .h1flex{
+        margin-top: 4vh;
+        margin-bottom: 0;
+      }
+      .h1flex p{
+font-size: 14px;
+      }
+
+/*================================================================ Content ============================================*/
+
+.flexcard {
+  margin-right: 1vh;
+  margin-left: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+element {
+
+}
+.cardarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 6vh;
+    height: 50vh;
+    width: 40vh;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 40vh;
+  margin-bottom: 5vh;
+  border: 1px solid rgb(127, 127, 127);
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
+}
+/*================================================================ Footer============================================*/
       .footeritems a {
         font-size: 9px;
         margin-left: 10px;
