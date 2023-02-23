@@ -159,17 +159,16 @@ color: var(--black);
 
    /*================================================================== CARD ! ============================================*/
 
-   .loader,
-.loader:before,
-.loader:after {
+   .loader1,
+.loader1:before,
+.loader1:after {
   border-radius: 50%;
 }
 
-.loader {
+.loader1 {
   color: #ffffff;
   font-size: 11px;
   text-indent: -99999em;
-  
   position: relative;
   width: 10em;
   height: 10em;
@@ -179,13 +178,13 @@ color: var(--black);
   transform: translateZ(0);
 }
 
-.loader:before,
-.loader:after {
+.loader1:before,
+.loader1:after {
   position: absolute;
   content: '';
 }
 
-.loader:before {
+.loader1:before {
   width: 5.2em;
   height: 10.2em;
   background: #0011ff;
@@ -198,7 +197,7 @@ color: var(--black);
   animation: load2 2s infinite ease 1.5s;
 }
 
-.loader:after {
+.loader1:after {
   width: 5.2em;
   height: 10.2em;
   background: #0011ff;
@@ -877,12 +876,959 @@ color: var(--black);
           }
         }
         
-         /*================================================================== CARD ! ============================================*/
-          /*================================================================== CARD ! ============================================*/
-           /*================================================================== CARD ! ============================================*/
-            /*================================================================== CARD ! ============================================*/
-             /*================================================================== CARD ! ============================================*/
-              /*================================================================== CARD ! ============================================*/
+         /*================================================================== CARD 7 ============================================*/
+
+         .loader7 {
+          position: relative;
+         
+        }
+        
+        .jimu-primary-loading:before,
+        .jimu-primary-loading:after {
+          position: absolute;
+          top: 0;
+          content: '';
+        }
+        
+        .jimu-primary-loading:before {
+          left: -19.992px;
+        }
+        
+        .jimu-primary-loading:after {
+          left: 19.992px;
+          -webkit-animation-delay: 0.32s !important;
+          animation-delay: 0.32s !important;
+        }
+        
+        .jimu-primary-loading:before,
+        .jimu-primary-loading:after,
+        .jimu-primary-loading {
+          background: #076fe5;
+          -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+          animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+          width: 13.6px;
+          height: 32px;
+        }
+        
+        .jimu-primary-loading {
+          text-indent: -9999em;
+          margin: auto;
+          position: absolute;
+          right: calc(50% - 6.8px);
+          top: calc(50% - 16px);
+          -webkit-animation-delay: 0.16s !important;
+          animation-delay: 0.16s !important;
+        }
+        
+        @-webkit-keyframes loading-keys-app-loading {
+        
+          0%,
+          80%,
+          100% {
+            opacity: .75;
+            box-shadow: 0 0 #076fe5;
+            height: 32px;
+          }
+        
+          40% {
+            opacity: 1;
+            box-shadow: 0 -8px #076fe5;
+            height: 40px;
+          }
+        }
+        
+        @keyframes loading-keys-app-loading {
+        
+          0%,
+          80%,
+          100% {
+            opacity: .75;
+            box-shadow: 0 0 #076fe5;
+            height: 32px;
+          }
+        
+          40% {
+            opacity: 1;
+            box-shadow: 0 -8px #076fe5;
+            height: 40px;
+          }
+        }
+          /*================================================================== CARD 8 ============================================*/
+
+          .loader8 {
+            width: 48px;
+            height: 48px;
+            margin: auto;
+            position: relative;
+          }
+          
+          .loader8:before {
+            content: '';
+            width: 48px;
+            height: 5px;
+            background: #f0808050;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            border-radius: 50%;
+            animation: shadow324 0.5s linear infinite;
+          }
+          
+          .loader8:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #f08080;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 4px;
+            animation: jump7456 0.5s linear infinite;
+          }
+          
+          @keyframes jump7456 {
+            15% {
+              border-bottom-right-radius: 3px;
+            }
+          
+            25% {
+              transform: translateY(9px) rotate(22.5deg);
+            }
+          
+            50% {
+              transform: translateY(18px) scale(1, .9) rotate(45deg);
+              border-bottom-right-radius: 40px;
+            }
+          
+            75% {
+              transform: translateY(9px) rotate(67.5deg);
+            }
+          
+            100% {
+              transform: translateY(0) rotate(90deg);
+            }
+          }
+          
+          @keyframes shadow324 {
+          
+            0%,
+              100% {
+              transform: scale(1, 1);
+            }
+          
+            50% {
+              transform: scale(1.2, 1);
+            }
+          }
+           /*================================================================== CARD 9 ============================================*/
+           .pl {
+            width: 6em;
+            height: 6em;
+          }
+          
+          .pl__ring {
+            animation: ringA 2s linear infinite;
+          }
+          
+          .pl__ring--a {
+            stroke: #f42f25;
+          }
+          
+          .pl__ring--b {
+            animation-name: ringB;
+            stroke: #f49725;
+          }
+          
+          .pl__ring--c {
+            animation-name: ringC;
+            stroke: #255ff4;
+          }
+          
+          .pl__ring--d {
+            animation-name: ringD;
+            stroke: #f42582;
+          }
+          
+          /* Animations */
+          @keyframes ringA {
+            from, 4% {
+              stroke-dasharray: 0 660;
+              stroke-width: 20;
+              stroke-dashoffset: -330;
+            }
+          
+            12% {
+              stroke-dasharray: 60 600;
+              stroke-width: 30;
+              stroke-dashoffset: -335;
+            }
+          
+            32% {
+              stroke-dasharray: 60 600;
+              stroke-width: 30;
+              stroke-dashoffset: -595;
+            }
+          
+            40%, 54% {
+              stroke-dasharray: 0 660;
+              stroke-width: 20;
+              stroke-dashoffset: -660;
+            }
+          
+            62% {
+              stroke-dasharray: 60 600;
+              stroke-width: 30;
+              stroke-dashoffset: -665;
+            }
+          
+            82% {
+              stroke-dasharray: 60 600;
+              stroke-width: 30;
+              stroke-dashoffset: -925;
+            }
+          
+            90%, to {
+              stroke-dasharray: 0 660;
+              stroke-width: 20;
+              stroke-dashoffset: -990;
+            }
+          }
+          
+          @keyframes ringB {
+            from, 12% {
+              stroke-dasharray: 0 220;
+              stroke-width: 20;
+              stroke-dashoffset: -110;
+            }
+          
+            20% {
+              stroke-dasharray: 20 200;
+              stroke-width: 30;
+              stroke-dashoffset: -115;
+            }
+          
+            40% {
+              stroke-dasharray: 20 200;
+              stroke-width: 30;
+              stroke-dashoffset: -195;
+            }
+          
+            48%, 62% {
+              stroke-dasharray: 0 220;
+              stroke-width: 20;
+              stroke-dashoffset: -220;
+            }
+          
+            70% {
+              stroke-dasharray: 20 200;
+              stroke-width: 30;
+              stroke-dashoffset: -225;
+            }
+          
+            90% {
+              stroke-dasharray: 20 200;
+              stroke-width: 30;
+              stroke-dashoffset: -305;
+            }
+          
+            98%, to {
+              stroke-dasharray: 0 220;
+              stroke-width: 20;
+              stroke-dashoffset: -330;
+            }
+          }
+          
+          @keyframes ringC {
+            from {
+              stroke-dasharray: 0 440;
+              stroke-width: 20;
+              stroke-dashoffset: 0;
+            }
+          
+            8% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -5;
+            }
+          
+            28% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -175;
+            }
+          
+            36%, 58% {
+              stroke-dasharray: 0 440;
+              stroke-width: 20;
+              stroke-dashoffset: -220;
+            }
+          
+            66% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -225;
+            }
+          
+            86% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -395;
+            }
+          
+            94%, to {
+              stroke-dasharray: 0 440;
+              stroke-width: 20;
+              stroke-dashoffset: -440;
+            }
+          }
+          
+          @keyframes ringD {
+            from, 8% {
+              stroke-dasharray: 0 440;
+              stroke-width: 20;
+              stroke-dashoffset: 0;
+            }
+          
+            16% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -5;
+            }
+          
+            36% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -175;
+            }
+          
+            44%, 50% {
+              stroke-dasharray: 0 440;
+              stroke-width: 20;
+              stroke-dashoffset: -220;
+            }
+          
+            58% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -225;
+            }
+          
+            78% {
+              stroke-dasharray: 40 400;
+              stroke-width: 30;
+              stroke-dashoffset: -395;
+            }
+          
+            86%, to {
+              stroke-dasharray: 0 440;
+              stroke-width: 20;
+              stroke-dashoffset: -440;
+            }
+          }
+            /*================================================================== CARD 10 ============================================*/
+            .loader10 {
+              position: relative;
+              width: 2.5em;
+              height: 2.5em;
+              transform: rotate(165deg);
+             }
+             
+             .loader10:before, .loader10:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              display: block;
+              width: 0.5em;
+              height: 0.5em;
+              border-radius: 0.25em;
+              transform: translate(-50%, -50%);
+             }
+             
+             .loader10:before {
+              animation: before8 2s infinite;
+             }
+             
+             .loader10:after {
+              animation: after6 2s infinite;
+             }
+             
+             @keyframes before8 {
+              0% {
+               width: 0.5em;
+               box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+              }
+             
+              35% {
+               width: 2.5em;
+               box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+              }
+             
+              70% {
+               width: 0.5em;
+               box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+              }
+             
+              100% {
+               box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+              }
+             }
+             
+             @keyframes after6 {
+              0% {
+               height: 0.5em;
+               box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+              }
+             
+              35% {
+               height: 2.5em;
+               box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+              }
+             
+              70% {
+               height: 0.5em;
+               box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+              }
+             
+              100% {
+               box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+              }
+             }
+             
+             .loader {
+              position: absolute;
+              top: calc(50% - 1.25em);
+              left: calc(50% - 1.25em);
+             }
+             /*================================================================== CARD !1 ============================================*/
+             .loader11 {
+              width: 112px;
+              height: 112px;
+            }
+            
+            .box1,
+            .box2,
+            .box3 {
+              border: 16px solid rgb(0, 121, 202);
+              box-sizing: border-box;
+              position: absolute;
+              display: block;
+            }
+            
+            .box1 {
+              width: 112px;
+              height: 48px;
+              margin-top: 64px;
+              margin-left: 0px;
+              animation: abox1 4s 1s forwards ease-in-out infinite;
+            }
+            
+            .box2 {
+              width: 48px;
+              height: 48px;
+              margin-top: 0px;
+              margin-left: 0px;
+              animation: abox2 4s 1s forwards ease-in-out infinite;
+            }
+            
+            .box3 {
+              width: 48px;
+              height: 48px;
+              margin-top: 0px;
+              margin-left: 64px;
+              animation: abox3 4s 1s forwards ease-in-out infinite;
+            }
+            
+            @keyframes abox1 {
+              0% {
+                width: 112px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            
+              12.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            
+              25% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            
+              37.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            
+              50% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            
+              62.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            
+              75% {
+                width: 48px;
+                height: 112px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              87.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              100% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            }
+            
+            @keyframes abox2 {
+              0% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              12.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              25% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              37.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              50% {
+                width: 112px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+              }
+            
+              62.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            
+              75% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            
+              87.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            
+              100% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            }
+            
+            @keyframes abox3 {
+              0% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            
+              12.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            
+              25% {
+                width: 48px;
+                height: 112px;
+                margin-top: 0px;
+                margin-left: 64px;
+              }
+            
+              37.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+              }
+            
+              50% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+              }
+            
+              62.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+              }
+            
+              75% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+              }
+            
+              87.5% {
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+              }
+            
+              100% {
+                width: 112px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+              }
+            }
+            
+              /*================================================================== CARD !2 ============================================*/
+              @keyframes square-animation {
+                0% {
+                 left: 0;
+                 top: 0;
+                }
+               
+                10.5% {
+                 left: 0;
+                 top: 0;
+                }
+               
+                12.5% {
+                 left: 32px;
+                 top: 0;
+                }
+               
+                23% {
+                 left: 32px;
+                 top: 0;
+                }
+               
+                25% {
+                 left: 64px;
+                 top: 0;
+                }
+               
+                35.5% {
+                 left: 64px;
+                 top: 0;
+                }
+               
+                37.5% {
+                 left: 64px;
+                 top: 32px;
+                }
+               
+                48% {
+                 left: 64px;
+                 top: 32px;
+                }
+               
+                50% {
+                 left: 32px;
+                 top: 32px;
+                }
+               
+                60.5% {
+                 left: 32px;
+                 top: 32px;
+                }
+               
+                62.5% {
+                 left: 32px;
+                 top: 64px;
+                }
+               
+                73% {
+                 left: 32px;
+                 top: 64px;
+                }
+               
+                75% {
+                 left: 0;
+                 top: 64px;
+                }
+               
+                85.5% {
+                 left: 0;
+                 top: 64px;
+                }
+               
+                87.5% {
+                 left: 0;
+                 top: 32px;
+                }
+               
+                98% {
+                 left: 0;
+                 top: 32px;
+                }
+               
+                100% {
+                 left: 0;
+                 top: 0;
+                }
+               }
+               
+               .loader12 {
+                position: relative;
+                width: 96px;
+                height: 96px;
+                transform: rotate(45deg);
+               }
+               
+               .loader-square {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 28px;
+                height: 28px;
+                margin: 2px;
+                border-radius: 0px;
+                background: black;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                animation: square-animation 10s ease-in-out infinite both;
+               }
+               
+               .loader-square:nth-of-type(0) {
+                animation-delay: 0s;
+               }
+               
+               .loader-square:nth-of-type(1) {
+                animation-delay: -1.4285714286s;
+               }
+               
+               .loader-square:nth-of-type(2) {
+                animation-delay: -2.8571428571s;
+               }
+               
+               .loader-square:nth-of-type(3) {
+                animation-delay: -4.2857142857s;
+               }
+               
+               .loader-square:nth-of-type(4) {
+                animation-delay: -5.7142857143s;
+               }
+               
+               .loader-square:nth-of-type(5) {
+                animation-delay: -7.1428571429s;
+               }
+               
+               .loader-square:nth-of-type(6) {
+                animation-delay: -8.5714285714s;
+               }
+               
+               .loader-square:nth-of-type(7) {
+                animation-delay: -10s;
+               }
+               /*================================================================== CARD 13 ============================================*/
+
+               .loader13 {
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border-top: 5px solid #e74c3c;
+                position: relative;
+                animation: load 2s linear infinite;
+              }
+              
+              .loader13::before,.loader13::after {
+                content: '';
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                box-sizing: border-box;
+                border-radius: 50%;
+              }
+              
+              .loader13::before {
+                border-top: 5px solid #e67e22;
+                transform: rotate(120deg);
+              }
+              
+              .loader13::after {
+                border-top: 5px solid #3498db;
+                transform: rotate(240deg);
+              }
+              
+              .loader13 span {
+                position: absolute;
+                font-size: small;
+                width: 100px;
+                height: 100px;
+                color: #fff;
+                text-align: center;
+                line-height: 100px;
+                animation: a2 2s linear infinite;
+              }
+              
+              @keyframes load {
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+              
+              @keyframes a2 {
+                to {
+                  transform: rotate(-360deg);
+                }
+              }
+            /*================================================================== CARD 14 ============================================*/
+            .loader14 {
+              --clr: #3498db;
+              /* color of spining  */
+              width: 50px;
+              height: 50px;
+              position: relative;
+             }
+             
+             .loader14:before, .loader14:after {
+              content: "";
+              position: absolute;
+              top: -10px;
+              left: -10px;
+              width: 100%;
+              height: 100%;
+              border-radius: 100%;
+              border: 10px solid transparent;
+              border-top-color: var(--clr);
+             }
+             
+             .loader14:before {
+              z-index: 100;
+              animation: spin 1s infinite;
+             }
+             
+             .loader14:after {
+              border: 10px solid #ccc;
+             }
+             
+             @keyframes spin {
+              0% {
+               -webkit-transform: rotate(0deg);
+               -ms-transform: rotate(0deg);
+               -o-transform: rotate(0deg);
+               transform: rotate(0deg);
+              }
+             
+              100% {
+               -webkit-transform: rotate(360deg);
+               -ms-transform: rotate(360deg);
+               -o-transform: rotate(360deg);
+               transform: rotate(360deg);
+              }
+             }
+             
+             /*================================================================== CARD !5 ============================================*/
+
+             .loading {
+              width: 60px;
+              height: 60px;
+              position: relative;
+            }
+            
+            .d1 ,
+            .d2 {
+              border: 5px solid #64dfdf;
+              border-radius: 50px;
+            }
+            
+            .loading .d1 {
+              width: 55px;
+              height: 55px;
+              position: absolute;
+              border-left-color: transparent;
+              border-right-color: transparent;
+              animation: load161 1s linear infinite;
+            }
+            
+            .loading .d2 {
+              width: 40px;
+              height: 40px;
+              border-top-color: transparent;
+              border-bottom-color: transparent;
+              margin: 7.5px;
+              animation: load2812 2s linear infinite;
+            }
+            
+            @keyframes load161 {
+              0% {
+                transform: rotate(0);
+              }
+            
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+            
+            @keyframes load2812 {
+              0% {
+                transform: rotate(0);
+              }
+            
+              100% {
+                transform: rotate(-360deg);
+              }
+            }
+          
+              
               
 
   /*================================================================== Footer ============================================*/
