@@ -89,8 +89,8 @@ nav .icons {
   
   }
   .h3flex{
-    top: 6vh;
-    margin-bottom: 5vh;
+    top: 2vh;
+    margin-bottom: 2vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -98,8 +98,8 @@ nav .icons {
     flex-direction: column;
     }
     .h2flex{
-      top: 6vh;
-      margin-bottom: 5vh;
+      top: 3vh;
+      margin-bottom:  4vh;
       position: relative;
       display: flex;
       justify-content: center;
@@ -107,7 +107,7 @@ nav .icons {
       flex-direction: column;
       }
       #buttons h1{
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 900;
         font-family: 'Times New Roman', Times, serif;
       }
@@ -119,13 +119,11 @@ nav .icons {
       }
       .h3flex p{
         font-size: 16px;
-margin-right: 16vw;
-margin-left: 14vw;
+
 line-height: 1.4;
-margin-bottom: 8vh;
-margin-top: 8vh;
+margin-bottom: 5vh;
+margin-top: 3vh;
 color: #171717;
-font-family: 'Inter', sans-serif;
 font-weight: 600;
 
       }

@@ -93,6 +93,7 @@ nav .icons {
  }
  h1{
   font-size: 8vh;
+  font-family: 'Times New Roman', Times, serif;
  }
 
   /*================================================================== CARD ============================================*/
@@ -1914,9 +1915,6 @@ font-size: 14px;
   align-items: center;
 }
 
-element {
-
-}
 .cardarea {
     display: flex;
     justify-content: center;

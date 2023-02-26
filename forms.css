@@ -11,12 +11,13 @@
 html{
   scroll-behavior: smooth;
 }
+
 :root{
-    --grayishBlue: hsl(229, 6%, 66%);
-    --white: #fff;
-    --grass: #458600;
-    --black: #000000;
-    --color: #3c3163;
+  --grayishBlue: hsl(229, 6%, 66%);
+  --white: #fff;
+  --grass: #458600;
+  --black: #000;
+  --color: #3c3163;
 }
 
 /*================================================================== Header ============================================*/
@@ -81,41 +82,48 @@ nav .icons {
   display: none;
 }
 
-/*================================================================== Header  ============================================*/
-.h1flex{
-  margin-top: 7vh;
-  margin-bottom: 5vh;
+ /*================================================================== Header  ============================================*/
+ .h1flex{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
  }
- h1{
+.h1flex h1{
   font-size: 8vh;
+  margin-bottom: 2vh;
+  font-family: 'Times New Roman', Times, serif;
  }
 
   /*================================================================== CARD ============================================*/
   .flexcard{
-    margin-right: 5vh;
-    margin-left: 5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    margin-bottom: 5vh;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .cardarea{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5vh;
-    height: 55vh;
-    width: 55vh;
+    margin: 2vh;
+    margin-bottom: 10vh;
+    height: 100vh;
+    width: 44vw;
   
   }
   .card{
-    height: 45vh;
-    width: 50vh;
-    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 40vw;
+    margin-bottom: 3vh;
     border: 1px solid rgb(174, 174, 174);
     border-radius: 5px;
     box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
@@ -151,56 +159,656 @@ transition: 0.5s;
 background-color: var(--white);
 color: var(--black);
   }
+ 
 
    /*================================================================== CARD ! ============================================*/
-    /*================================================================== CARD ! ============================================*/
-     /*================================================================== CARD ! ============================================*/
-      /*================================================================== CARD ! ============================================*/
-       /*================================================================== CARD ! ============================================*/
-        /*================================================================== CARD ! ============================================*/
-         /*================================================================== CARD ! ============================================*/
-          /*================================================================== CARD ! ============================================*/
-           /*================================================================== CARD ! ============================================*/
-            /*================================================================== CARD ! ============================================*/
-             /*================================================================== CARD ! ============================================*/
-              /*================================================================== CARD ! ============================================*/
+
+   #card1  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #240046;
+  height: 80vh;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #24004628;
+  }
+  
+  #card1  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+  }
+  
+  /*checkbox to switch from sign up to login*/
+   #chk {
+    display: none;
+  }
+  
+  /*Login*/
+  #card1 .login {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  
+  #card1 .login label {
+    margin: 25% 0 5%;
+  }
+  
+  #card1  label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  
+  #card1 .input {
+    width: auto;
+    height: auto;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  /*Register*/
+  #card1 .register {
+    background: #eee;
+    border-radius: 60% / 10%;
+    transition: .8s ease-in-out;
+  }
+  
+  #card1 .register label {
+    color: #573b8a;
+    transform: scale(.6);
+  }
+  
+  #chk:checked ~ .register {
+    transform: translateY(-60%);
+  }
+  
+  #chk:checked ~ .register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+  }
+  
+  #chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+  }   
+  /*Button*/
+#card1  .form button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  
+  #card1  .form button:hover {
+    background-color: #6d44b8;
+  }
+
+  /*================================================================== Form 2 ============================================*/
+      
+ #card2 .form {
+    width: 290px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid rgb(180, 178, 178);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: .4s ease-in-out;
+  }
+  
+
+  
+  #card2 .heading {
+    position: relative;
+    text-align: center;
+    color: black;
+    top: 3em;
+    font-weight: bold;
+  }
+  
+  #card2 .check {
+    position: relative;
+    align-self: center;
+    top: 4em;
+  }
+  
+  #card2 .input {
+    position: relative;
+    width: 1.5em;
+    height: 2.5em;
+    margin: 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 252, 252);
+    box-shadow: inset 3px 3px 6px #d1d1d1,
+              inset -3px -3px 6px #ffffff;
+    top: 6.5em;
+    left: 1.5em;
+    padding-left: 15px;
+    transition: .4s ease-in-out;
+  }
+  
+  #card2  .input:hover {
+    box-shadow: inset 0px 0px 0px #d1d1d1,
+              inset 0px 0px 0px #ffffff;
+    background-color: lightgrey;
+  }
+  
+  #card2  .input:focus {
+    box-shadow: inset 0px 0px 0px #d1d1d1,
+              inset 0px 0px 0px #ffffff;
+    background-color: lightgrey;
+  }
+  
+  #card2 .btn1 {
+    background-color: #000000;
+    color: white;
+    position: relative;
+    top: 8.5em;
+    left: 2.4em;
+    width: 17em;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    box-shadow: 1px 1px 3px #b5b5b5,
+               -1px -1px 3px #ffffff;
+  }
+  
+  #card2  .btn1:hover {
+    background-color: white;
+    color: black;
+  }
+
+  
+  #card2  .btn2 {
+    background-color: #000000;
+    color: white;
+    position: relative;
+    top: 9.5em;
+    left: 2.4em;
+    width: 17em;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    box-shadow: 1px 1px 3px #b5b5b5,
+               -1px -1px 3px #ffffff;
+  }
+  #card2  .btn2:hover {
+    background-color: white;
+    color: black;
+  }
+  
+ 
               
-
-  /*================================================================== Footer ============================================*/
-
-  .footeritems {
+   /*================================================================== Form 3 ============================================*/
+   #card3 .singup {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+  }
+  
+  #card3 .card3 {
     display: flex;
     justify-content: center;
     align-items: center;
+   height: 36vw;
+    width: 30vw;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #ffffff;
+    border: 2px solid rgb(177, 177, 177);
+    box-shadow: 16px 16px 32px #c8c8c8,
+          -16px -16px 32px #fefefe;
+    border-radius: 8px;
   }
-  .footeritems a {
+  
+  .inputBox,
+  .inputBox1 {
+    position: relative;
+    width: 250px;
+  }
+  
+  .inputBox input,
+  .inputBox1 input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .inputBox span,
+  .inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .inputBox input:valid~span,
+  .inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox1 input:valid~span,
+  .inputBox1 input:focus~span {
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox input:valid,
+  .inputBox input:focus,
+  .inputBox1 input:valid,
+  .inputBox1 input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
+  #card3  .enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+    margin-top: 4vh;
+  }
+  
+  #card3 .enter:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+   /*================================================================== Form 4 ============================================*/
+
+   .subscribe {
+    position: absolute;
+    height: 140px;
+    width: 240px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 4px;
+    color: #333;
+    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .subscribe:after {
+    position: absolute;
+    content: "";
+    right: -10px;
+    bottom: 18px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1a044e;
+  }
+  
+  .subscribe p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 28px;
+  }
+  
+  .subscribe input {
+    position: absolute;
+    bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+    width: 82%;
+    background: transparent;
+    transition: all .25s ease;
+  }
+  
+  .subscribe input:focus {
+    outline: none;
+    border-bottom: 1px solid #0d095e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+  }
+  
+  .subscribe .submit-btn {
+    position: absolute;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #0f0092;
+    color: #FFF;
+    padding: 12px 25px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    right: -10px;
+    bottom: -20px;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+  }
+  
+  .subscribe .submit-btn:hover {
+    background-color: #07013d;
+    box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+  }
+   
+   /*================================================================== Form 5 ============================================*/
+   .login-box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px
+  }
+  
+  .login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box p:last-child {
+    color: #aaa;
     font-size: 14px;
-    margin-left: 30px;
-  color: white;
-    opacity: 0.9;
-    font-weight: 600;
+  }
+  
+  .login-box a.a2 {
+    color: #fff;
     text-decoration: none;
   }
-  .copyright {
-    font-size: 14px;
-    margin-top: 0vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(59, 59, 59, 0.998);
-    color: white;
-    opacity: 0.9;
-    padding: 1vh;
-    font-weight: 600;
+  
+  .login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
   }
-
-
-
-
-
-
-
-
+   
+   /*================================================================== Form 6 ============================================*/
+   .card6 {
+    position: relative;
+    border-radius: 10px;
+    width: 190px;
+    height: 254px;
+    background: #ffffff;
+    border: 1px solid rgb(163, 163, 163);
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+  }
+  
+  #card6 .form {
+    padding: 25px;
+  }
+  
+  .card_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+ .card6 svg {
+    color: #7878bd;
+    
+    margin-right: 8px;
+  }
+  
+ #card6  .form_heading {
+    font-size: 21px;
+    color: #7878bd;
+  }
+  
+   .field {
+    padding-bottom: 10px;
+  }
+  
+  #card6 .input {
+    border-radius: 5px;
+    background-color: #e9e9f7;
+    padding: 5px;
+    width: 100%;
+    color: #7a7ab3;
+    border: 1px solid #dadaf7
+  }
+  
+  #card6 .input:focus-visible {
+    outline: 1px solid #aeaed6;
+  }
+  
+  #card6 .input::placeholder {
+    color: #bcbcdf;
+  }
+  
+  #card6 label {
+    color: #B2BAC8;
+    font-size: 14px;
+    display: block;
+    padding-bottom: 4px;
+  }
+  
+  #card6  button {
+    border-radius: 5px;
+    background-color: #7878bd;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 7px 12px;
+    height: auto;
+    font-weight: 500;
+    color: white;
+    border: none;
+  }
+  
+  #card6   button:hover {
+    background-color: #5f5f9c;
+  }
 
  /*================================================================== Media ============================================*/
 /*================================================================== Media ============================================*/
@@ -234,7 +842,56 @@ color: var(--black);
         margin: 10px;
         cursor: pointer;
       }
-      .footeritems a {
+/*================================================================ header ============================================*/
+    .h1flex  h1 {
+        font-size: 4vh;
+      }
+      .h1flex{
+        margin-top: 4vh;
+        margin-bottom: 0;
+      }
+      .h1flex p{
+font-size: 14px;
+      }
+
+/*================================================================ Content ============================================*/
+.flexcard{
+  margin-right: 0vh;
+  margin-left: 0vh;
+  margin-bottom: 5vh;
+  margin-top: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardarea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0vh;
+  margin-bottom: 5vh;
+  height: 90vh;
+  width: 100vw;
+
+
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 90vw;
+  margin-bottom: 3vh;
+  border: 1px solid rgb(133, 133, 133);
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
+}
+
+/*================================================================ Footer============================================*/
+     
+
+.footeritems a {
         font-size: 9px;
         margin-left: 10px;
       }
@@ -243,4 +900,7 @@ color: var(--black);
         padding: 2vh;
         font-weight: 600;
       }
+
+
+
     }
