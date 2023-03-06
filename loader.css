@@ -123,7 +123,9 @@ nav .icons {
     margin-bottom: 5vh;
     border: 1px solid rgb(174, 174, 174);
     border-radius: 5px;
-    box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
   }
   .cardbtns{
     display: flex;
@@ -1933,7 +1935,7 @@ font-size: 14px;
   margin-bottom: 5vh;
   border: 1px solid rgb(127, 127, 127);
   border-radius: 5px;
-  box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
+  
 }
 /*================================================================ Footer============================================*/
       .footeritems a {

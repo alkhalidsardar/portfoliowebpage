@@ -17,7 +17,7 @@ html{
   --white: #fff;
   --grass: #458600;
   --black: #000;
-  --boxblack: rgb(22, 22, 22);
+  --boxblack: rgb(41, 41, 41);
   --color: #3c3163;
 }
 
@@ -127,7 +127,9 @@ nav .icons {
     margin-bottom: 3vh;
     border: 1px solid rgb(174, 174, 174);
     border-radius: 5px;
-    box-shadow: 0px 30px 40px -20px var(--grayishBlue); 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
   }
   /*----------------------------------------------------------------media-------------------------------------------------------*/
   @media (max-width: 700px) {
@@ -184,7 +186,7 @@ color: var(--black);
  
 
    /*================================================================== Input ! ============================================*/
-  #card1 .input {
+  #card1 .input1 {
     margin: 30px;
     background: none;
     border: none;
@@ -310,7 +312,7 @@ input:-webkit-autofill:active {
 }
    /*================================================================== Input 3 ============================================*/
    #card3 .card{
-    background-color: #1a1a1a;
+    background-color: var(--boxblack);
    }
    .inputbox {
     position: relative;
@@ -369,7 +371,7 @@ input:-webkit-autofill:active {
   }
    /*================================================================== Input 4 ============================================*/
 #card4 .card{
-  background-color: #1b1b1b;
+  background-color: var(--boxblack);
 }
    .searchbar {
     position: relative;
@@ -486,7 +488,7 @@ input:-webkit-autofill:active {
   }
    /*================================================================== Input 5 ============================================*/
    #card5 .card{
-    background-color: #191919;
+    background-color: var(--boxblack);
    }
    .input-group {
     position: relative;
@@ -526,7 +528,7 @@ input:-webkit-autofill:active {
    /*================================================================== Input 6 ============================================*/
  
    .input6 {
-    background-color: #1a1a1a;
+    background-color: var(--boxblack);
     max-width: 200px;
     aspect-ratio: 16/3;
     padding: 12px;
@@ -565,6 +567,7 @@ input:-webkit-autofill:active {
 }
 .input7 {
   background-color: #212121;
+  color: white;
   max-width: 190px;
   height: 40px;
   padding: 10px;
@@ -584,7 +587,7 @@ input:-webkit-autofill:active {
 }
    /*================================================================== Input 8 ============================================*/
    #card8 .card{
-    background-color: rgb(247, 247, 247);
+    background-color: var(--boxblack);
 
   }
   
@@ -601,7 +604,7 @@ input:-webkit-autofill:active {
   --height-of-input: 40px;
   --border-height: 2px;
   --input-bg: #fff;
-  --border-color: #2f2ee9;
+  --border-color: #ff0000;
   --border-radius: 30px;
   --after-border-radius: 1px;
   position: relative;
@@ -668,12 +671,253 @@ input8:not(:placeholder-shown) ~ .reset {
   width: 17px;
   margin-top: 3px;
 }
-   /*================================================================== Input ! ============================================*/
-   /*================================================================== Input ! ============================================*/
-   /*================================================================== Input ! ============================================*/
-   /*================================================================== Input ! ============================================*/
-   /*================================================================== Input ! ============================================*/
-   /*================================================================== Input ! ============================================*/
+   /*================================================================== Input 9 ============================================*/
+   .input-group9 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input9 {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #000000;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #5e5dcd;
+  }
+  
+  .input9:focus, .input9:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+  
+   /*================================================================== Input !0 ============================================*/
+
+   .wave-group {
+    position: relative;
+  }
+  
+  .wave-group .input10 {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+  }
+  
+  .wave-group .input10:focus {
+    outline: none;
+  }
+  
+  .wave-group .label10 {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-group .input10:focus ~ label .label-char,
+  .wave-group .input10:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input10:focus ~ .bar:before,
+  .wave-group .input10:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  
+   /*================================================================== Input 11 ============================================*/
+   #card11 .card{
+    background-color: var(--boxblack);
+   }
+   .input-wrapper11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .input11 {
+    border-style: none;
+    height: 29px;
+width: 0px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: #7e4fd4;
+    box-shadow: 0px 0px 3px #f3f3f3;
+    padding-right: 40px;
+    color: #fff;
+  }
+  
+  .input11::placeholder,
+  .input11 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+  }
+  
+  .input11::placeholder {
+    color: #8f8f8f;
+  }
+  
+  .icon11 {
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+  }
+  
+  .icon11:focus ~ .input11,
+  .input11:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #7e4fd4;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+  
+  
+   /*================================================================== Input 12 ============================================*/
+   .input12 {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input12:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+   /*================================================================== Input 13 ============================================*/
+   #card13 .card{
+    background-color: var(--boxblack);
+   }
+   .input13 {
+    max-width: 190px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    margin: 5px;
+    transition: .5s;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: rotate(90deg);
+  }
+  
+  .input13:focus {
+    width: 150px;
+    transform: rotate(0);
+  }
+   /*================================================================== Input 14 ============================================*/
+   .container-input14 {
+    position: relative;
+  }
+  
+  .input14 {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input14 svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input14:focus {
+    opacity: 1;
+    width: 250px;
+  }
 
 
 
@@ -702,6 +946,55 @@ input8:not(:placeholder-shown) ~ .reset {
   padding: 1vh;
   font-weight: 600;
 }
+
+ /*================================================================== Input !5 ============================================*/
+
+
+.input-container15 {
+  width: 220px;
+  position: relative;
+}
+
+.icon15 {
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.input15 {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input15:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+.input-container15:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+
+
 
  /*================================================================== Media ============================================*/
 /*================================================================== Media ============================================*/
