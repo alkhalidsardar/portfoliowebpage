@@ -1,0 +1,50 @@
+ <!----================================================================= CARD 5 ============================================-->
+    <div  class="cardarea" id="card5">
+      <div class="card"><div class="input-group">
+        <input required="" type="text" name="text" autocomplete="off" class="input5">
+        <label class="user-label5">First Name</label>
+      </div></div>
+      <div class="cardbtns">
+       <p>Through Border </p>
+        <a href="" class="sourcecode"> Source Code</a>
+    </div>
+  </div>
+/*================================================================== Input 5 ============================================*/
+   #card5 .card{
+    background-color: var(--boxblack);
+   }
+   .input-group {
+    position: relative;
+   }
+   
+   .input5 {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label5 {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input5:focus, input5:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+   }
+   
+   .input5:focus ~ label, input5:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #212121;
+    padding: 0 .2em;
+    color: #2196f3;
+   }
+  

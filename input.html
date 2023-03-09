@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Feilds</title>
     <link rel="stylesheet" href="input.css">
+    
 </head>
 <body>
      <!-------------------------------------------Navbar----------------------------------------------------->
@@ -62,7 +63,7 @@
             </div>
             <div class="cardbtns">
              <p>Inset Input </p>
-              <a href="" class="sourcecode"> Source Code</a>
+             <button class="copy-text" data-folder="inputtxt" data-filename="c1.txt">Copy Source Code</button>
           </div>
         </div>
  <!----================================================================= CARD 2 ============================================-->
@@ -87,7 +88,7 @@
           </form></div>
             <div class="cardbtns">
              <p> Twitter Search </p>
-              <a href="" class="sourcecode"> Source Code</a>
+             <button class="copy-text" data-folder="inputtxt" data-filename="c2.txt">Copy Source Code</button>
           </div>
         </div>
 
@@ -100,7 +101,7 @@
         </div></div>
           <div class="cardbtns">
            <p>SlideUp Username </p>
-            <a href="" class="sourcecode"> Source Code</a>
+            <button class="copy-text" data-folder="inputtxt" data-filename="c3.txt">Copy Source Code</button>
         </div>
       </div>
  <!----================================================================= CARD 4 ============================================-->
@@ -139,7 +140,7 @@
       </div></div>
         <div class="cardbtns">
          <p>Google Search </p>
-          <a href="" class="sourcecode"> Source Code</a>
+          <button class="copy-text" data-folder="inputtxt" data-filename="c4.txt">Copy Source Code</button>
       </div>
     </div>
  <!----================================================================= CARD 5 ============================================-->
@@ -150,7 +151,7 @@
       </div></div>
       <div class="cardbtns">
        <p>Through Border </p>
-        <a href="" class="sourcecode"> Source Code</a>
+        <button class="copy-text" data-folder="inputtxt" data-filename="c5.txt">Copy Source Code</button>
     </div>
   </div>
  <!----================================================================= CARD 6 ============================================-->
@@ -158,7 +159,7 @@
     <div class="card"><input type="password" name="text" class="input6" pattern="\d+" placeholder="Numbers only or shake"></div>
     <div class="cardbtns">
      <p>Shake </p>
-      <a href="" class="sourcecode"> Source Code</a>
+      <button class="copy-text" data-folder="inputtxt" data-filename="c6.txt">Copy Source Code</button>
   </div>
 </div>
  <!----================================================================= CARD 7 ============================================-->
@@ -166,7 +167,7 @@
   <div class="card"><input placeholder="Enter your text..." class="input7" name="text" type="text"></div>
   <div class="cardbtns">
    <p>Border Glow </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c7.txt">Copy Source Code</button>
 </div>
 </div>
  <!----================================================================= CARD 8 ============================================-->
@@ -186,7 +187,7 @@
 </form></div>
   <div class="cardbtns">
    <p>Radius Spread </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c8.txt">Copy Source Code</button>
 </div>
 </div>
  <!----================================================================= CARD 9 ============================================-->
@@ -197,7 +198,7 @@
 </div></div>
   <div class="cardbtns">
    <p>Subscribe </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c9.txt">Copy Source Code</button>
 </div>
 </div>
 <!----================================================================= CARD 10 ============================================-->
@@ -214,7 +215,7 @@
   </div></div>
   <div class="cardbtns">
    <p>Wave Text </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c10.txt">Copy Source Code</button>
 </div>
 </div>
 <!----================================================================= CARD 11 ============================================-->
@@ -230,7 +231,7 @@
   </div></div>
   <div class="cardbtns">
    <p>Expanding Icon </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c11.txt">Copy Source Code</button>
 </div>
 </div>
 <!----================================================================= CARD 12 ============================================-->
@@ -238,7 +239,7 @@
   <div class="card"><input type="text" autocomplete="off" name="text" class="input12" placeholder="Username"></div>
   <div class="cardbtns">
    <p>Popping Input </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c12.txt">Copy Source Code</button>
 </div>
 </div>
 <!----================================================================= CARD 13 ============================================-->
@@ -248,7 +249,7 @@
     <input type="text" name="text" class="input13"></div>
   <div class="cardbtns">
    <p>Rotating Boxes </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c13.txt">Copy Source Code</button>
 </div>
 </div>
 <!----================================================================= CARD 14 ============================================-->
@@ -262,7 +263,7 @@
   </div>
   <div class="cardbtns">
    <p>Basic Search</p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c14.txt">Copy Source Code</button>
 </div>
 </div>
 <!----================================================================= CARD 15 ============================================-->
@@ -275,7 +276,7 @@
   </div> </div>
   <div class="cardbtns">
    <p>Icon Expand </p>
-    <a href="" class="sourcecode"> Source Code</a>
+    <button class="copy-text" data-folder="inputtxt" data-filename="c15.txt">Copy Source Code</button>
 </div>
 </div>
 
@@ -294,13 +295,77 @@
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms % Conditions</a>
         </div>
-       
       </div>
+     
+        
+      <script>
+        var buttons = document.querySelectorAll(".copy-text");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function() {
+        var foldername = this.getAttribute("data-folder");
+        var filename = this.getAttribute("data-filename");
+        copyText(foldername, filename);
+      });
+    }
+    
+    var button = document.querySelector(".copy-all-text");
+    if (button) {
+      button.addEventListener("click", function() {
+        var foldername = this.getAttribute("data-folder");
+        copyAllText(foldername);
+      });
+    }
+    
+    function copyText(foldername, filename) {
+      var path = foldername + "/" + filename;
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", path);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var text = xhr.responseText;
+          navigator.clipboard.writeText(text)
+            .then(function() {
+              alert("Text copied to clipboard");
+            })
+            .catch(function(error) {
+              console.error("Error copying text: ", error);
+            });
+        }
+      };
+      xhr.send();
+    }
+    
+    function copyAllText(foldername) {
+      var path = foldername + "/";
+      fetch(path)
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(text) {
+          var filenames = text.split("\n");
+          var textFiles = filenames.filter(function(filename) {
+            return filename.endsWith(".txt");
+          });
+          for (var i = 0; i < textFiles.length; i++) {
+            var filename = textFiles[i];
+            copyText(foldername, filename);
+          }
+        })
+        .catch(function(error) {
+          console.error("Error fetching files: ", error);
+        });
+    }
+    
+    </script> 
   
   
   
-  
-        <script src="portfolio.js"></script>
+      
+       
+
+
+
+<script src="portfolio.js"></script>
 
 </body>
 </html>

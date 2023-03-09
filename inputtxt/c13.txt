@@ -1,0 +1,62 @@
+<!----================================================================= CARD 13 ============================================-->
+<div  class="cardarea" id="card13">
+  <div class="card"><input type="text" name="text" class="input13">
+    <input type="text" name="text" class="input13">
+    <input type="text" name="text" class="input13"></div>
+  <div class="cardbtns">
+   <p>Rotating Boxes </p>
+    <a href="" class="sourcecode"> Source Code</a>
+</div>
+</div>
+ 
+   /*================================================================== Input 13 ============================================*/
+   #card13 .card{
+    background-color: var(--boxblack);
+   }
+   .input13 {
+    max-width: 190px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    margin: 5px;
+    transition: .5s;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: rotate(90deg);
+  }
+  
+  .input13:focus {
+    width: 150px;
+    transform: rotate(0);
+  }
+   /*================================================================== Input 14 ============================================*/
+   .container-input14 {
+    position: relative;
+  }
+  
+  .input14 {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input14 svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input14:focus {
+    opacity: 1;
+    width: 250px;
+  }
