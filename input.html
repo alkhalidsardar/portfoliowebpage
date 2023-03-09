@@ -298,65 +298,30 @@
       </div>
      
         
+  
+      
       <script>
-        var buttons = document.querySelectorAll(".copy-text");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener("click", function() {
-        var foldername = this.getAttribute("data-folder");
-        var filename = this.getAttribute("data-filename");
-        copyText(foldername, filename);
-      });
-    }
-    
-    var button = document.querySelector(".copy-all-text");
-    if (button) {
-      button.addEventListener("click", function() {
-        var foldername = this.getAttribute("data-folder");
-        copyAllText(foldername);
-      });
-    }
-    
-    function copyText(foldername, filename) {
-      var path = foldername + "/" + filename;
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", path);
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var text = xhr.responseText;
-          navigator.clipboard.writeText(text)
-            .then(function() {
-              alert("Text copied to clipboard");
-            })
-            .catch(function(error) {
-              console.error("Error copying text: ", error);
-            });
-        }
-      };
-      xhr.send();
-    }
-    
-    function copyAllText(foldername) {
-      var path = foldername + "/";
-      fetch(path)
-        .then(function(response) {
-          return response.text();
-        })
-        .then(function(text) {
-          var filenames = text.split("\n");
-          var textFiles = filenames.filter(function(filename) {
-            return filename.endsWith(".txt");
+        var buttons = document.querySelectorAll('.textcpy');
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener('click', function() {
+            var filename = this.getAttribute('data-filename');
+            var url = 'inputtxt/' + filename;
+            fetch(url)
+              .then(response => response.text())
+              .then(text => {
+                navigator.clipboard.writeText(text)
+                  .then(function() {
+                    alert("Text copied to clipboard");
+                  })
+                  .catch(function(error) {
+                    console.error("Error copying text: ", error);
+                  });
+              })
+              .catch(error => console.error("Error fetching text: ", error));
           });
-          for (var i = 0; i < textFiles.length; i++) {
-            var filename = textFiles[i];
-            copyText(foldername, filename);
-          }
-        })
-        .catch(function(error) {
-          console.error("Error fetching files: ", error);
-        });
-    }
-    
-    </script> 
+        }
+      </script>
+      
   
   
   
