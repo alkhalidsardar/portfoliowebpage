@@ -299,27 +299,33 @@
         
   <!--=================================================== Copy Paste =========================================================================-->
       
-  <script>
-    var buttons = document.querySelectorAll('.copy-text');
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', function() {
-        var filename = this.getAttribute('data-filename');
-        var url = 'inputtxt/' + filename;
-        fetch(url)
-          .then(response => response.text())
-          .then(text => {
-            navigator.clipboard.writeText(text)
-              .then(function() {
-                alert("Text copied to clipboard");
-              })
-              .catch(function(error) {
-                console.error("Error copying text: ", error);
-              });
-          })
-          .catch(error => console.error("Error fetching text: ", error));
-      });
+ <script>
+  var buttons = document.querySelectorAll('.copy-text');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    var filename = this.getAttribute('data-filename');
+    var url = 'inputtxt/' + filename;
+    if (window.navigator.userAgent.includes('Instagram')) {
+      // If user is using Instagram in-app browser, show a prompt
+      alert('Please open the website in a browser to copy the file.');
+      return;
     }
-  </script>
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        navigator.clipboard.writeText(text)
+          .then(function() {
+            alert("Text copied to clipboard");
+          })
+          .catch(function(error) {
+            console.error("Error copying text: ", error);
+          });
+      })
+      .catch(error => console.error("Error fetching text: ", error));
+  });
+}
+
+ </script>
       <!--=================================================== Navbar =========================================================================-->
 
 <script src="portfolio.js"></script>
