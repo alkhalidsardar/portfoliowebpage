@@ -133,23 +133,31 @@ nav .icons {
   }
   /*----------------------------------------------------------------media-------------------------------------------------------*/
   @media (max-width: 700px) {
-    .card {
-      box-shadow: none;
-      border: none;
+    .cardarea{
       display: flex;
       justify-content: center;
-    align-items: end;
-    height: auto;
-      width: 90vw;
-      margin-bottom: 40px;
+      align-items: center;
+      flex-direction: column;
+      margin: 2vh;
+      margin-bottom: 10vh;
+      height: auto;
+      width: 44vw;
+    
+    }
+    .card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 27vh;
+width: 91vw;
+      margin-bottom: 3vh;
+      border: 1px solid rgb(174, 174, 174);
       border-radius: 5px;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
     }
-    .cardarea{
-      margin-bottom: 0vh;
-      margin: 0vh;
-      width: 100vw;
-      margin-bottom: 15vh;
-    }
+ 
   }
   /*----------------------------------------------------------------media  close-------------------------------------------------------*/
   .cardbtns{
@@ -184,6 +192,23 @@ transition: 0.5s;
 background-color: var(--white);
 color: var(--black);
   }
+  /*----------------------------------------------------------------media  buttons------------------------------------------------------*/
+  @media (max-width: 700px){
+    .cardbtns p{
+      font-size: 15px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  height: auto;
+width: 32vw;
+    }
+    .cardbtns button{
+      height: 7vh;
+  width: 48vw;
+  padding: 7px 1px;
+  margin-right: 0px;
+    }
+  }
+
  
 
    /*================================================================== Input ! ============================================*/
@@ -1038,7 +1063,7 @@ width: 0px;
         margin-bottom: 0;
       }
       .h1flex p{
-font-size: 14px;
+font-size: 12px;
       }
 
 /*================================================================ Content ============================================*/

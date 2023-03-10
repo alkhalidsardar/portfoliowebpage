@@ -167,7 +167,7 @@ border-radius: 5px;
 margin-right: 10px;
 transition: 0.5s;
   }
-  .cardbtns a{
+  .cardbtns button{
     font-size: 15px;
 text-decoration: none;
 color: var(--white);
@@ -177,7 +177,7 @@ border-radius: 5px;
 margin-right: 10px;
 transition: 0.5s;
   }
-  .cardbtns a:hover{
+  .cardbtns button:hover{
 background-color: var(--white);
 color: var(--black);
   }

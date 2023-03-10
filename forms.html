@@ -81,7 +81,7 @@
             </div></div>
             <div class="cardbtns">
              <p>Form 1 </p>
-              <a href="" class="sourcecode"> Source Code</a>
+               <button class="copy-text"  data-filename="f1.txt">Copy Source Code</button>
           </div>
         </div>
           
@@ -118,7 +118,7 @@
             </form> </div>
             <div class="cardbtns">
              <p> Verify Code </p>
-              <a href="" class="sourcecode"> Source Code</a>
+               <button class="copy-text"  data-filename="f2.txt">Copy Source Code</button>
           </div>
         </div>
 
@@ -148,7 +148,7 @@
         </div></div>
           <div class="cardbtns">
            <p>Sign Up</p>
-            <a href="" class="sourcecode"> Source Code</a>
+             <button class="copy-text"  data-filename="f3.txt">Copy Source Code</button>
         </div>
       </div>
         
@@ -165,7 +165,7 @@
            </div>
           <div class="cardbtns">
            <p>Subscribe</p>
-            <a href="" class="sourcecode"> Source Code</a>
+             <button class="copy-text"  data-filename="f4.txt">Copy Source Code</button>
         </div>
       </div>
 
@@ -194,7 +194,7 @@
 </div></div>
         <div class="cardbtns">
          <p> Login 2</p>
-          <a href="" class="sourcecode"> Source Code</a>
+           <button class="copy-text"  data-filename="f5.txt">Copy Source Code</button>
       </div>
     </div>
       
@@ -223,7 +223,7 @@
         </form> </div>
         <div class="cardbtns">
          <p>Login 3</p>
-          <a href="" class="sourcecode"> Source Code</a>
+           <button class="copy-text"  data-filename="f6.txt">Copy Source Code</button>
       </div>
     </div>
 
@@ -249,7 +249,7 @@
       </div>
       <div class="cardbtns">
        <p>Send</p>
-        <a href="" class="sourcecode"> Source Code</a>
+         <button class="copy-text"  data-filename="f7.txt">Copy Source Code</button>
     </div>
   </div>
     
@@ -266,7 +266,7 @@
       </div>
       <div class="cardbtns">
        <p>Submit</p>
-        <a href="" class="sourcecode"> Source Code</a>
+         <button class="copy-text"  data-filename="f8.txt">Copy Source Code</button>
     </div>
   </div>
 
@@ -283,7 +283,7 @@
   </div></div>
     <div class="cardbtns">
      <p>Subscription</p>
-      <a href="" class="sourcecode"> Source Code</a>
+       <button class="copy-text"  data-filename="f9.txt">Copy Source Code</button>
   </div>
 </div>
   
@@ -349,7 +349,7 @@
     </form> </div>
     <div class="cardbtns">
      <p>Account Login</p>
-      <a href="" class="sourcecode"> Source Code</a>
+       <button class="copy-text"  data-filename="f10.txt">Copy Source Code</button>
   </div>
 </div>
 
@@ -365,11 +365,35 @@
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms % Conditions</a>
         </div>
-       
       </div>
+       <!----================================================================== copy ============================================-->
+<script>var buttons = document.querySelectorAll('.copy-text');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+      var filename = this.getAttribute('data-filename');
+      var url = 'formtxt/' + filename;
+      if (window.navigator.userAgent.includes('Instagram')) {
+        // If user is using Instagram in-app browser, show a prompt
+        alert('Please open the website in a browser to copy the file.');
+        return;
+      }
+      fetch(url)
+        .then(response => response.text())
+        .then(text => {
+          navigator.clipboard.writeText(text)
+            .then(function() {
+              alert("Text copied to clipboard");
+            })
+            .catch(function(error) {
+              console.error("Error copying text: ", error);
+            });
+        })
+        .catch(error => console.error("Error fetching text: ", error));
+    });
+  }
+  </script>
   
-  
-  
+   <!----================================================================== navbar js ============================================-->
   
         <script src="portfolio.js"></script>
 

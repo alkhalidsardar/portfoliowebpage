@@ -1,0 +1,74 @@
+<!----================================================================= CARD 8 ============================================-->
+    <div class="cardarea">
+      <div class="card"> 
+        <form class="form8">
+          Sign Up
+              <input type="text" class="input" placeholder="Name">
+              <input type="text" class="input" placeholder="Password"> 
+              <button>Submit</button>
+          </form>
+      </div>
+      <div class="cardbtns">
+       <p>Submit</p>
+        <a href="" class="sourcecode"> Source Code</a>
+    </div>
+  </div>
+
+  /*================================================================== Form 8 ============================================*/
+  .form8 {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e1e1e;
+    padding: 20px;
+    border: 1px solid #3d3c3c;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .form8 input {
+    height: 30px;
+    outline: none;
+    border: 2px solid orange;
+    background: transparent;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: .5s;
+    color: white;
+    font-size: 20px;
+  }
+  @media (max-width: 700px) {
+    .form8 {
+      display: flex;
+      width: 70vw;
+     
+      gap: 10px;
+   
+      padding: 20px;
+      border: 1px solid #3d3c3c;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  
+  .form8 input:focus {
+    background: orange;
+  }
+  
+  .form8 button {
+    width: 100%;
+    color: white;
+    transition: .5s;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    background: orange;
+    align-self: flex-end;
+  }
