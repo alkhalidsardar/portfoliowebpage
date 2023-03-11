@@ -15,7 +15,8 @@ html{
 :root{
   --grayishBlue: hsl(229, 6%, 66%);
   --white: #fff;
-  --grass: #458600;
+  --grass: black;
+  --btn: rgb(1, 0, 30) ;
   --black: #000;
   --color: #3c3163;
 }
@@ -28,9 +29,9 @@ html{
 }
 /*================================================================== Navbar ============================================*/
 nav {
-    background-color: black;
+    background-color: rgb(1, 0, 30);
   padding-left: 5%;
-  padding-right: 10%;
+  padding-right: 5%;
   padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -52,17 +53,16 @@ nav ul li {
   list-style: none;
   margin: 10px 20px;
   display: inline-flex;
+  align-items: center;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.5s;
 }
 
 /*adding hover effects to nav items*/
-
-
 
 nav ul li a::after {
   content: "";
@@ -80,6 +80,13 @@ nav ul li a:hover {
 }
 nav .icons {
   display: none;
+}
+
+.home, .but, .car, .inp, .formi, .load {
+  color: #fff;
+  font-size: 18px;
+margin-right: 6px;
+margin-top: 2px;
 }
 
  /*================================================================== Header  ============================================*/
@@ -157,29 +164,33 @@ nav .icons {
     align-items: center;
   }
  
+
   .cardbtns p{
     font-size: 15px;
 text-decoration: none;
-color: var(--white);
-background-color: var(--grass);
+color: white;
+background-color: transparent;
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 padding: 7px 20px;
 border-radius: 5px;
 margin-right: 10px;
-transition: 0.5s;
   }
   .cardbtns button{
+    border: none;
+    outline: none;
     font-size: 15px;
 text-decoration: none;
-color: var(--white);
-background-color: var(--black);
+color: white;
+background-color:  rgb(2, 0, 59);
 padding: 7px 20px;
 border-radius: 5px;
 margin-right: 10px;
-transition: 0.5s;
+transition: 0.4s;
   }
   .cardbtns button:hover{
-background-color: var(--white);
-color: var(--black);
+    background-color:  rgb(67, 65, 132);
+color: white;
   }
  
 
@@ -837,21 +848,9 @@ color: var(--black);
     padding-bottom: 4px;
   }
   
-  #card6  button {
-    border-radius: 5px;
-    background-color: #7878bd;
-    margin-top: 10px;
-    font-size: 14px;
-    padding: 7px 12px;
-    height: auto;
-    font-weight: 500;
-    color: white;
-    border: none;
-  }
   
-  #card6   button:hover {
-    background-color: #5f5f9c;
-  }
+  
+  
 
   /*=============================================================== Form 7 ========================================================*/
  
@@ -1261,37 +1260,46 @@ color: var(--black);
 /*================================================================== Media ============================================*/
 
 @media (max-width: 700px){
-
-    /*================================================================ Nav ============================================*/
-    .navlinks {
-        position: fixed;
-        background-color: black;
+ /*================================================================ Nav ============================================*/
+ .navlinks {
+  position: fixed;
+  background-color: rgb(1, 0, 30);
+  height: 100vh;
+  width: 200px;
+  z-index: 2;
+  text-align: left;
+  top: 0;
+  right: -200px;
+  transition: 0.5s; /*for sidebar*/
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  margin-top: 1px;
   
-        height: 100vh;
-        width: 200px;
-        z-index: 2;
-        text-align: left;
-        top: 0;
-        right: -200px;
-        transition: 0.5s; /*for sidebar*/
-      }
-      nav ul li {
-        display:block;
-      }
-      nav ul li a{
-        color: white;
-      }
-      nav ul li a:hover{
-        color: red;
-      }
-      /*menu icon*/
-      nav .icons {
-        font-size: 30px;
-        color: white;
-        display: block;
-        margin: 10px;
-        cursor: pointer;
-      }
+}
+.home, .but, .car, .inp, .formi, .load {
+  color: #fff;
+  font-size: 20px;
+margin-right: 7px;
+
+}
+nav ul li a:hover{
+  color: red;
+}
+/*menu icon*/
+nav .icons {
+  font-size: 30px;
+  color: white;
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
 /*================================================================ header ============================================*/
     .h1flex  h1 {
         font-size: 4vh;
