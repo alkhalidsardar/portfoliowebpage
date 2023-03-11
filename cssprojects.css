@@ -47,14 +47,14 @@ color: RED;
 }
 nav ul li {
 list-style: none;
-margin: 10px 20px;
+margin: 10px 25px;
 display: inline-flex;
 align-items: center;
 }
 nav ul li a {
 color: white;
 text-decoration: none;
-font-size: 18px;
+font-size: 20px;
 transition: 0.5s;
 }
 
@@ -78,10 +78,10 @@ nav .icons {
 display: none;
 }
 
-.home, .but, .car, .inp, .formi, .load {
+.home, .proj, .pot {
 color: #fff;
-font-size: 18px;
-margin-right: 6px;
+font-size: 20px;
+margin-right: 7px;
 margin-top: 2px;
 }
 
@@ -147,30 +147,43 @@ justify-content: center;
   }
 
   .visitwebpage{
+    outline: none;
+    border: none;
     font-size: 15px;
 text-decoration: none;
-color: var(--white);
-background-color: var(--grass);
+color: white;
+background-color: transparent;
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 padding: 7px 20px;
 border-radius: 5px;
 margin-right: 10px;
 transition: 0.5s;
   }
   .visitwebpage:hover{
-background-color: var(--white);
-color: var(--black);
+    background-color: transparent;
+    background-color: rgb(0, 6, 28);
+    background-image: none;
+cursor: pointer;
+
   }
+
   .sourcecode{
-    text-decoration: none;
-    color: var(--white);
-background-color: var(--black);
+    border: none;
+    outline: none;
+    font-size: 15px;
+text-decoration: none;
+color: white;
+background-color:  rgb(2, 0, 59);
 padding: 7px 20px;
 border-radius: 5px;
-transition: 0.5s;
+margin-right: 10px;
+transition: 0.4s;
   }
   .sourcecode:hover{
-    background-color: var(--white);
-    color: var(--black);
+    background-color:  rgb(59, 15, 85);
+color: white;
+cursor: pointer;
   }
   .webpageuplift{
     transition: transform 0.5s;

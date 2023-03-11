@@ -88,7 +88,7 @@
                <!--         card   End   -->
            <div class="cardbuttons">
             <p> Flip CARD </p>
-            <a href="#" class="sourcecode"> Source Code</a>
+            <button class="copy-text"  data-filename="cd1.txt" class="sourcecode"> Source Code</button>
         </div>
           </div>
 
@@ -110,7 +110,7 @@
          <!--         card   End    -->
         <div class="cardbuttons">
           <p> Slide Down </p>
-          <a href="#" class="sourcecode"> Source Code</a>
+          <button class="copy-text"  data-filename="cd2.txt" class="sourcecode"> Source Code</button>
         </div>
         </div>
 
@@ -160,14 +160,14 @@
        <!--         card 3   End    -->
       <div class="cardbuttons">
         <p> Spread </p>
-        <a href="#" class="sourcecode"> Source Code</a>
+        <button class="copy-text"  data-filename="cd3.txt" class="sourcecode"> Source Code</button>
       </div>
       </div>
       
           <!-- CARD 4 -->
       </section>
 
-        <!---================================================================ CARDS Layer 2 ============================================-->
+        <!---================================================================ CARDS 4 ============================================-->
         <section id="pricecard">
         <div class="h3flex">  <h3>Price Card Html CSS</h3> </div>
         <div id="pricing">
@@ -276,13 +276,13 @@
 
         <div class="cardbuttons">
           <p> Price CARD </p>
-          <a href="https://github.com/alkhalidsardar/pricecard/tree/main" class="sourcecode"> Source Code</a>
+          <button class="copy-text"  data-filename="cd4.txt" class="sourcecode"> Source Code</button>
       </div>
         </div>
 
       </section>
 
-       <!---================================================================ CARDS Layer 3 ============================================-->
+       <!---================================================================ CARDS 5 ============================================-->
 <section id="slideup">
 
   <div class="h3flex">  <h4>Slide Up Cards </h4> </div>
@@ -339,7 +339,7 @@
       </div>
       <div class="cardbuttons">
         <p> SlideUp CARD </p>
-        <a href="https://github.com/alkhalidsardar/slideupcard/tree/main" class="sourcecode"> Source Code</a>
+        <button class="copy-text"  data-filename="cd5.txt" class="sourcecode"> Source Code</button>
     </div>
 
     </section>
@@ -358,5 +358,35 @@
 
     <!-- navbar script-->
       <script src="portfolio.js"></script>
+       <!--=================================================== Copy Paste =========================================================================-->
+      
+ <script>
+  var buttons = document.querySelectorAll('.copy-text');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    var filename = this.getAttribute('data-filename');
+    var url = 'cardtxt/' + filename;
+    if (window.navigator.userAgent.includes('Instagram')) {
+      // If user is using Instagram in-app browser, show a prompt
+      alert('Please open the website in a browser to copy the file.');
+      return;
+    }
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        navigator.clipboard.writeText(text)
+          .then(function() {
+            alert("Text copied to clipboard");
+          })
+          .catch(function(error) {
+            console.error("Error copying text: ", error);
+          });
+      })
+      .catch(error => console.error("Error fetching text: ", error));
+  });
+}
+</script>
+
+
 </body>
 </html>

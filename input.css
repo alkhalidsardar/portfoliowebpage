@@ -174,32 +174,34 @@ width: 91vw;
     justify-content: center;
     align-items: center;
   }
- 
   .cardbtns p{
     font-size: 15px;
 text-decoration: none;
-color: var(--white);
-background-color: var(--grass);
+color: white;
+background-color: transparent;
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 padding: 7px 20px;
 border-radius: 5px;
 margin-right: 10px;
-transition: 0.5s;
   }
-
   .cardbtns button{
+    border: none;
+    outline: none;
     font-size: 15px;
 text-decoration: none;
-color: var(--white);
-background-color: var(--black);
+color: white;
+background-color:  rgb(2, 0, 59);
 padding: 7px 20px;
 border-radius: 5px;
 margin-right: 10px;
-transition: 0.5s;
+transition: 0.4s;
   }
   .cardbtns button:hover{
-background-color: var(--white);
-color: var(--black);
+    background-color:  rgb(67, 65, 132);
+color: white;
   }
+ 
   /*----------------------------------------------------------------media  buttons------------------------------------------------------*/
   @media (max-width: 700px){
     .cardbtns p{

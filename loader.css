@@ -97,6 +97,9 @@ margin-top: 2px;
   justify-content: center;
   align-items: center;
  }
+.h1flex p{
+  margin-top: 2vh;
+}
  h1{
   font-size: 8vh;
   font-family: 'Times New Roman', Times, serif;
@@ -143,12 +146,13 @@ margin-top: 2px;
   .cardbtns p{
     font-size: 15px;
 text-decoration: none;
-color: var(--white);
-background-color: var(--grass);
+color: white;
+background-color: transparent;
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 padding: 7px 20px;
 border-radius: 5px;
 margin-right: 10px;
-transition: 0.5s;
   }
   .cardbtns button{
     border: none;
@@ -198,7 +202,7 @@ color: white;
 .loader1:before {
   width: 5.2em;
   height: 10.2em;
-  background: #0011ff;
+  background: #6d1486;
   border-radius: 10.2em 0 0 10.2em;
   top: -0.1em;
   left: -0.1em;
@@ -1925,6 +1929,7 @@ nav .icons {
       }
       .h1flex p{
 font-size: 14px;
+margin-top: 2vh;
       }
 
 /*================================================================ Content ============================================*/
@@ -1938,20 +1943,20 @@ font-size: 14px;
 }
 
 .cardarea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 6vh;
-    height: 50vh;
-    width: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6vh;
+  height: 50vh;
+  width: auto;
 }
 .card{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40vh;
-  width: 40vh;
+  width: 43vh;
   margin-bottom: 5vh;
   border: 1px solid rgb(127, 127, 127);
   border-radius: 5px;
