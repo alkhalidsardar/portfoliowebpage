@@ -1,166 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-html{
-  scroll-behavior: smooth;
-}
-
-:root{
-  --grayishBlue: hsl(229, 6%, 66%);
-  --white: #fff;
-  --grass: #458600;
-  --black: #000;
-  --color: #3c3163;
-}
-
-/*================================================================== Header ============================================*/
-
-#header {
-  width: 100%;
-  height: 100vh;
-}
-/*================================================================== Navbar ============================================*/
-nav {
-    background-color: black;
-  padding-left: 5%;
-  padding-right: 10%;
-  padding-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.navlinks {
-  flex: 1;
-  text-align: right;
-}
-.logo {
-  color: white;
-  font-size: 25px;
-}
-span {
-  color: RED;
-}
-nav ul li {
-  display: inline-flex;
-  list-style: none;
-  margin: 10px 20px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.5s;
-}
-
-/*adding hover effects to nav items*/
-
-
-
-nav ul li a::after {
-  content: "";
-  width: 0%; /*will change during hover*/
-  height: 3px;
-  background-color: lightcoral;
-  display: flex;
-  transition: 0.5s;
-}
-nav ul li a:hover::after {
-  width: 100%;
-}
-nav ul li a:hover {
-  color: white;
-}
-nav .icons {
-  display: none;
-}
-
- /*================================================================== Header  ============================================*/
- .h1flex{
-  margin-top: 7vh;
-  margin-bottom: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- }
- h1{
-  font-size: 8vh;
-  font-family: 'Times New Roman', Times, serif;
- }
-
-  /*================================================================== CARD ============================================*/
-  .flexcard{
-    margin-right: 5vh;
-    margin-left: 5vh;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .cardarea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5vh;
-    height: 53vh;
-    width: 50vh;
-  
-  }
-  .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 47vh;
-    width: 50vh;
-    margin-bottom: 5vh;
-    border: 1px solid rgb(174, 174, 174);
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
-  }
-  .cardbtns{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
- 
-  .cardbtns p{
-    font-size: 15px;
-text-decoration: none;
-color: var(--white);
-background-color: var(--grass);
-padding: 7px 20px;
-border-radius: 5px;
-margin-right: 10px;
-transition: 0.5s;
-  }
-  .cardbtns button{
-    font-size: 15px;
-text-decoration: none;
-color: var(--white);
-background-color: var(--black);
-padding: 7px 20px;
-border-radius: 5px;
-margin-right: 10px;
-transition: 0.5s;
-  }
-  .cardbtns button:hover{
-background-color: var(--white);
-color: var(--black);
-  }
- 
-
-   /*================================================================== CARD ! ============================================*/
+ <!----================================================================= CARD 1 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div class="loader1"></div></div>
+            <div class="cardbtns">
+             <p>PACMAN</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+            /*================================================================== CARD ! ============================================*/
 
    .loader1,
 .loader1:before,
@@ -225,7 +71,22 @@ color: var(--black);
   }
 }
 
-    /*================================================================== CARD 2 ============================================*/
+ <!----================================================================= CARD 2 ============================================-->
+          <div class="cardarea">
+            <div class="card">
+              <div class="loadingspinner">
+                <div id="square1"></div>
+                <div id="square2"></div>
+                <div id="square3"></div>
+                <div id="square4"></div>
+                <div id="square5"></div>
+              </div></div>
+            <div class="cardbtns">
+             <p>Assemble</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+ /*================================================================== CARD 2 ============================================*/
 
     .loadingspinner {
       --square: 26px;
@@ -472,7 +333,20 @@ color: var(--black);
         opacity: 1.0;
       }
     }
-     /*================================================================== CARD 3 ============================================*/
+ <!----================================================================= CARD 3 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div class="newtons-cradle">
+              <div class="newtons-cradle__dot"></div>
+              <div class="newtons-cradle__dot"></div>
+              <div class="newtons-cradle__dot"></div>
+              <div class="newtons-cradle__dot"></div>
+              </div></div>
+            <div class="cardbtns">
+             <p>oscillation</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+ /*================================================================== CARD 3 ============================================*/
 
      .newtons-cradle {
       --uib-size: 100px;
@@ -545,8 +419,17 @@ color: var(--black);
        animation-timing-function: ease-in;
       }
      }
-     
-      /*================================================================== CARD 4 ============================================*/
+ <!----================================================================= CARD 4 ============================================-->
+          <div class="cardarea">
+            <div class="card">
+              <div class="loader4"></div>
+            </div>
+            <div class="cardbtns">
+             <p>Bounce Ball</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+ /*================================================================== CARD 4 ============================================*/
       .loader4 {
         position: relative;
         width: 120px;
@@ -612,7 +495,31 @@ color: var(--black);
                   -70px 90px 0 rgba(215, 17, 17, 0);
         }
       }
-       /*================================================================== CARD 5 ============================================*/
+       /
+ <!----================================================================= CARD 5 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div id="wifi-loader">
+              <svg class="circle-outer" viewBox="0 0 86 86">
+                  <circle class="back" cx="43" cy="43" r="40"></circle>
+                  <circle class="front" cx="43" cy="43" r="40"></circle>
+                  <circle class="new" cx="43" cy="43" r="40"></circle>
+              </svg>
+              <svg class="circle-middle" viewBox="0 0 60 60">
+                  <circle class="back" cx="30" cy="30" r="27"></circle>
+                  <circle class="front" cx="30" cy="30" r="27"></circle>
+              </svg>
+              <svg class="circle-inner" viewBox="0 0 34 34">
+                  <circle class="back" cx="17" cy="17" r="14"></circle>
+                  <circle class="front" cx="17" cy="17" r="14"></circle>
+              </svg>
+              <div class="text" data-text="Searching"></div>
+          </div></div>
+            <div class="cardbtns">
+             <p>Wifi Loader</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+   /*================================================================== CARD 5 ============================================*/
 
        #wifi-loader {
         --background: #62abff;
@@ -804,7 +711,24 @@ color: var(--black);
         }
       }
        
-        /*================================================================== CARD 6 ============================================*/
+ <!----================================================================= CARD 6 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div class="spinner">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div></div>
+            <div class="cardbtns">
+             <p>SPIN BARS</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+*================================================================== CARD 6 ============================================*/
         .spinner {
           position: relative;
           width: 100px;
@@ -879,7 +803,17 @@ color: var(--black);
           }
         }
         
-         /*================================================================== CARD 7 ============================================*/
+ <!----================================================================= CARD 7 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div class="loader7">
+              <div class="justify-content-center jimu-primary-loading"></div>
+            </div></div>
+            <div class="cardbtns">
+             <p>BARS</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+  /*================================================================== CARD 7 ============================================*/
 
          .loader7 {
           position: relative;
@@ -956,7 +890,15 @@ color: var(--black);
             height: 40px;
           }
         }
-          /*================================================================== CARD 8 ============================================*/
+ <!----================================================================= CARD 8 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div class="loader8"></div></div>
+            <div class="cardbtns">
+             <p>Bounce Box</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+*================================================================== CARD 8 ============================================*/
 
           .loader8 {
             width: 48px;
@@ -1023,7 +965,21 @@ color: var(--black);
               transform: scale(1.2, 1);
             }
           }
-           /*================================================================== CARD 9 ============================================*/
+
+ <!----================================================================= CARD 9 ============================================-->
+          <div class="cardarea">
+            <div class="card"><svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+              <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+              <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+              <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+              <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+            </svg></div>
+            <div class="cardbtns">
+             <p>Threads</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+ /*================================================================== CARD 9 ============================================*/
            .pl {
             width: 6em;
             height: 6em;
@@ -1228,7 +1184,15 @@ color: var(--black);
               stroke-dashoffset: -440;
             }
           }
-            /*================================================================== CARD 10 ============================================*/
+ <!----================================================================= CARD 10 ============================================-->
+          <div class="cardarea">
+            <div class="card"><div class="loader10"></div></div>
+            <div class="cardbtns">
+             <p>Hash</p>
+              <a href="" class="sourcecode"> Source Code</a>
+          </div>
+        </div>
+ /*================================================================== CARD 10 ============================================*/
             .loader10 {
               position: relative;
               width: 2.5em;
@@ -1303,7 +1267,19 @@ color: var(--black);
               top: calc(50% - 1.25em);
               left: calc(50% - 1.25em);
              }
-             /*================================================================== CARD 11 ============================================*/
+ <!----================================================================= CARD 11 ============================================-->
+        <div class="cardarea">
+          <div class="card"><div class="loader11">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+          </div></div>
+          <div class="cardbtns">
+           <p>Boxes</p>
+            <a href="" class="sourcecode"> Source Code</a>
+        </div>
+      </div>
+   /*================================================================== CARD 11 ============================================*/
              .loader11 {
               width: 112px;
               height: 112px;
@@ -1535,9 +1511,24 @@ color: var(--black);
                 margin-top: 64px;
                 margin-left: 0px;
               }
-            }
-            
-              /*================================================================== CARD !2 ============================================*/
+            }  
+ <!----================================================================= CARD 12 ============================================-->
+      <div class="cardarea">
+        <div class="card"><div class="loader12">
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          </div></div>
+        <div class="cardbtns">
+         <p>GRID</p>
+          <a href="" class="sourcecode"> Source Code</a>
+      </div>
+    </div>
+   /*================================================================== CARD !2 ============================================*/
               @keyframes square-animation {
                 0% {
                  left: 0;
@@ -1678,7 +1669,26 @@ color: var(--black);
                .loader-square:nth-of-type(7) {
                 animation-delay: -10s;
                }
-               /*================================================================== CARD 13 ============================================*/
+        <!----================================================================= CARD 13 ============================================-->
+        <div class="cardarea">
+          <div class="card"><div class="loader13">
+            <span>Loading...</span>
+        </div></div>
+          <div class="cardbtns">
+           <p>Squishy Circle</p>
+            <a href="" class="sourcecode"> Source Code</a>
+        </div>
+      </div>
+ <!----================================================================= CARD 14 ============================================-->
+    <div class="cardarea">
+      <div class="card"><div class="loader14">
+      </div></div>
+      <div class="cardbtns">
+       <p>Basic Loader</p>
+        <a href="" class="sourcecode"> Source Code</a>
+    </div>
+  </div>
+ /*================================================================== CARD 13 ============================================*/
 
                .loader13 {
                 width: 100px;
@@ -1733,53 +1743,18 @@ color: var(--black);
                   transform: rotate(-360deg);
                 }
               }
-            /*================================================================== CARD 14 ============================================*/
-            .loader14 {
-              --clr: #3498db;
-              /* color of spining  */
-              width: 50px;
-              height: 50px;
-              position: relative;
-             }
-             
-             .loader14:before, .loader14:after {
-              content: "";
-              position: absolute;
-              top: -10px;
-              left: -10px;
-              width: 100%;
-              height: 100%;
-              border-radius: 100%;
-              border: 10px solid transparent;
-              border-top-color: var(--clr);
-             }
-             
-             .loader14:before {
-              z-index: 100;
-              animation: spin 1s infinite;
-             }
-             
-             .loader14:after {
-              border: 10px solid #ccc;
-             }
-             
-             @keyframes spin {
-              0% {
-               -webkit-transform: rotate(0deg);
-               -ms-transform: rotate(0deg);
-               -o-transform: rotate(0deg);
-               transform: rotate(0deg);
-              }
-             
-              100% {
-               -webkit-transform: rotate(360deg);
-               -ms-transform: rotate(360deg);
-               -o-transform: rotate(360deg);
-               transform: rotate(360deg);
-              }
-             }
-             
-             /*================================================================== CARD !5 ============================================*/
+ <!----================================================================= CARD 15 ============================================-->
+  <div class="cardarea">
+    <div class="card"><div class="loading">
+      <div class="d1"></div>
+      <div class="d2"></div>
+  </div></div>
+    <div class="cardbtns">
+     <p>Double Bars</p>
+      <a href="" class="sourcecode"> Source Code</a>
+  </div>
+</div>
+ /*================================================================== CARD !5 ============================================*/
 
              .loading {
               width: 60px;
@@ -1861,93 +1836,3 @@ color: var(--black);
     padding: 1vh;
     font-weight: 600;
   }
-
-
- /*================================================================== Media ============================================*/
-/*================================================================== Media ============================================*/
-
-@media (max-width: 700px){
-
-    /*================================================================ Nav ============================================*/
-    .navlinks {
-        position: fixed;
-        background-color: black;
-  
-        height: 100vh;
-        width: 200px;
-        z-index: 2;
-        text-align: left;
-        top: 0;
-        right: -200px;
-        transition: 0.5s; /*for sidebar*/
-      }
-      nav ul li {
-        display:block;
-      }
-      nav ul li a{
-        color: white;
-      }
-      nav ul li a:hover{
-        color: red;
-      }
-      /*menu icon*/
-      nav .icons {
-        font-size: 30px;
-        color: white;
-        display: block;
-        margin: 10px;
-        cursor: pointer;
-      }
-/*================================================================ header ============================================*/
-      h1 {
-        font-size: 4vh;
-      }
-      .h1flex{
-        margin-top: 4vh;
-        margin-bottom: 0;
-      }
-      .h1flex p{
-font-size: 14px;
-      }
-
-/*================================================================ Content ============================================*/
-
-.flexcard {
-  margin-right: 1vh;
-  margin-left: 1vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cardarea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 6vh;
-    height: 50vh;
-    width: 40vh;
-}
-.card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
-  width: 40vh;
-  margin-bottom: 5vh;
-  border: 1px solid rgb(127, 127, 127);
-  border-radius: 5px;
-  
-}
-/*================================================================ Footer============================================*/
-      .footeritems a {
-        font-size: 9px;
-        margin-left: 10px;
-      }
-      .copyright {
-        font-size: 9px;
-        padding: 2vh;
-        font-weight: 600;
-      }
-    }

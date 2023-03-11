@@ -1,0 +1,67 @@
+
+        <!----================================================================= CARD 13 ============================================-->
+        <div class="cardarea">
+          <div class="card"><div class="loader13">
+            <span>Loading...</span>
+        </div></div>
+          <div class="cardbtns">
+           <p>Squishy Circle</p>
+            <a href="" class="sourcecode"> Source Code</a>
+        </div>
+      </div>
+
+ /*================================================================== CARD 13 ============================================*/
+
+               .loader13 {
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border-top: 5px solid #e74c3c;
+                position: relative;
+                animation: load 2s linear infinite;
+              }
+              
+              .loader13::before,.loader13::after {
+                content: '';
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                box-sizing: border-box;
+                border-radius: 50%;
+              }
+              
+              .loader13::before {
+                border-top: 5px solid #e67e22;
+                transform: rotate(120deg);
+              }
+              
+              .loader13::after {
+                border-top: 5px solid #3498db;
+                transform: rotate(240deg);
+              }
+              
+              .loader13 span {
+                position: absolute;
+                font-size: small;
+                width: 100px;
+                height: 100px;
+                color: #fff;
+                text-align: center;
+                line-height: 100px;
+                animation: a2 2s linear infinite;
+              }
+              
+              @keyframes load {
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+              
+              @keyframes a2 {
+                to {
+                  transform: rotate(-360deg);
+                }
+              }
