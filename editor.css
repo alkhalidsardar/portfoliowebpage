@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter:wght@300&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --grayishBlue: hsl(229, 6%, 66%);
+  --white: #fff;
+  --black: #000000;
+}
+
+/*================================================================== Header ============================================*/
+
+
+/*================================================================== Navbar ============================================*/
+nav {
+  background-color: rgb(1, 0, 30);
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+}
+span {
+  color: RED;
+}
+nav ul li {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  margin: 10px 25px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+nav .icons {
+  display: none;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%; /*will change during hover*/
+  height: 3px;
+  background-color: lightcoral;
+  display: flex;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav .icons {
+  display: none;
+}
+/*-----------------------icon nav---------------------------------*/
+.home, .pot, .tools, .proj {
+  color: #fff;
+  font-size: 22px;
+margin-right: 5px;
+margin-top: 2px;
+}
+
+/*======================================================================== body ===========================================================*/
+
+
+body {
+  margin: 0;
+}
+
+
+
+
+
+.editor-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #060606;
+  
+}
+
+.code-box {
+  width: 30%;
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hflex{
+  display: flex;
+  justify-content: space-around;
+}
+.code-header {
+  background-color: #060606;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.expandable {
+  background-color: #1d1e22;
+  font-size: 16px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 11px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 100;
+  min-height: 150px; min-width: 250px;
+}
+#css-copy-btn{
+  background-color: #444857;
+  border: none;
+  color: #fff;
+margin: 8px;
+padding: 0px 12px;
+border-radius: 4px;
+
+}
+#html-copy-btn{
+  background-color: #444857;
+  border: none;
+  color: #fff;
+margin: 8px;
+padding: 0px 12px;
+border-radius: 4px;
+}
+#html-copy-btn:hover{
+  background-color: #757986;
+}
+#css-copy-btn:hover{
+  background-color: #757986;
+}
+
+
+.preview-container {
+
+}
+
+.preview-container iframe {
+  width: 100%;
+  height: 500px;
+}
+
+
+
+.output {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#preview {
+  border: none;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+textarea {
+  outline: none;
+}
+
+
+/*======================================================================== media width ===========================================================*/
+
+@media screen and (max-width: 700px) {
+  .editor {
+    flex-wrap: nowrap;
+  }
+  
+  .code-box {
+    flex: 1;
+ 
+  }
+  
+  
+  
+  .output {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  /*================================================================ Nav ============================================*/
+ nav{
+  background-color: #020911;
+ }
+  .navlinks {
+    position: fixed;
+    background-color: rgb(1, 0, 30);
+    color: white;
+    height: 100vh;
+    width: 200px;
+    z-index: 2;
+    text-align: left;
+    top: 0;
+    right: -200px;
+    transition: 0.5s; /*for sidebar*/
+  }
+
+  /*menu icon*/
+  nav .icons {
+    font-size: 30px;
+    color: #fff;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+
