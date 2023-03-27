@@ -202,7 +202,10 @@ textarea {
     flex: 1;
  
   }
+  .expandable {
   
+  min-height: 150px; min-width: 100px;
+}
   
   
   .output {
