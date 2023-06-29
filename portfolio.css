@@ -1,23 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --pink: #fce8ff;
+  --lpink: #f8f8f8;
+  --lviolet: #e3d1e6;
+  --dviolet: #a27baa;
+  --ddviolet: #753283;
+  --lblack: #464646;
+  --fontc: rgb(91, 0, 91);
+}
 html{
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--pink);
+  color: black;
  
  
 }
 /*-----------------------------------------------------HEADER------------------------------------------------------*/
 
 #header {
-  background-image: url(bgwalp.jpg);
   background-attachment: fixed;
   background-size: contain;
   width: 100%;
@@ -39,13 +48,14 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--lpink);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 .navlinks {
   flex: 1;
   text-align: right;
 }
 .logo {
-  color: white;
   font-size: 25px;
 }
 span {
@@ -57,9 +67,9 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: white;
   text-decoration: none;
   font-size: 20px;
+  color: var(--fontc)
 }
 
 /*adding hover effects to nav items*/
@@ -75,7 +85,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 nav ul li a:hover {
-  color: white;
+  color: black;
 }
 nav .icons {
   display: none;
@@ -102,7 +112,7 @@ nav .icons {
 .instagit i {
   margin-right: 2vw;
   font-size: 50px;
-  color: aliceblue;
+  color: var(--fontc);
   transition: font-size 0.5s;
 }
 .instagit i:hover {
@@ -111,9 +121,10 @@ nav .icons {
 }
 /*-----------------------------------------------------About-------------------------------------------------------------*/
 #about {
-  padding-top: 80px;
-
-  color: white;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  color: var(--fontc);
+  background-color: var(--lpink);
 }
 .row {
   display: flex;
@@ -130,10 +141,12 @@ nav .icons {
   
 }
 .column1 img {
-  height: 360px;
-  border-radius: 15px;
+  height: 250px;
+  border-radius: 5px;
   border-right: 20px solid white;
   border-left: 20px solid white;
+  clip-path:polygon(0 0,100% 0,200% 100%,200% 200%,100% 200%,0 100%);
+  box-shadow: 5px 5px 20px 24px rgb(113 108 108 / 53%);
 }
 .column2 {
   flex-basis: 56%;
@@ -143,9 +156,11 @@ nav .icons {
   margin-bottom: 7px;
 }
 .column2 p {
-  color: white;
+  color: black;
+  font-family: 'Pacifico', cursive;
   opacity: 0.9;
-  font-weight: 500;
+  font-size: 22px;
+
 }
 .tab-name {
   display: flex;
@@ -156,7 +171,8 @@ nav .icons {
   font-size: 18px;
   cursor: pointer;
   padding: 5px 20px;
-  background-color: #454545;
+  background-color: var(--ddviolet);
+  color: white;
   border-radius: 5px;
 }
 /*
@@ -181,7 +197,7 @@ nav .icons {
 }
 .tabcontent ul li span {
   font-size: 14px;
-  color: #ff004f;
+  color: black;
 }
 /*hiding tab content*/
 .tabcontent {
@@ -257,7 +273,7 @@ nav .icons {
 #portfolio h2{
   font-size: 45px;
   font-weight: 900;
-  font-family: 'Times New Roman', Times, serif;
+  color: var(--fontc)
 }
 .projects {
   display: flex;
@@ -342,14 +358,15 @@ nav .icons {
   text-decoration: none;
   padding: 10px 40px 10px 40px;
   border-radius: 5px;
-  color: white;
+  color: var(--fontc);
   font-weight: 600;
   transition: background 0.1s;
-  border: 2px solid #ff004f;
+  border: 2px solid var(--fontc);
 }
 
 .btn:hover {
-  background: #ff004f;
+  background: var(--ddviolet);
+  color: white;
   border: 1px solid black;
 }
 /*-----------------------------------------------------CONTACT-------------------------------------------*/

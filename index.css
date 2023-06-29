@@ -143,18 +143,20 @@ img {
 
 /*================================================================== Bottom Content ============================================*/
 .bottomcontent {
-  margin-top: 15vh;
+  margin-top: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .leftcontent {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-
+  background-color: rgb(1, 0, 30);
+  color: #fff;
   align-items: center;
-  height: 28vh;
+  min-height: 170px;
   width: 27vw;
   box-shadow: 0px 30px 40px -20px black;
   border-radius: 7px;
@@ -164,21 +166,32 @@ img {
 }
 .icont p {
   margin-top: 14px;
-  color: rgb(47, 47, 47);
+  color: #fff;
   font-size: 25px;
   font-weight: 900;
 }
 
 .rightcontent {
-  background-color: #fff;
+  background-color: rgb(1, 0, 30);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 10vw;
-  height: 31vh;
+  margin-top: 10vh;
+  min-height: 170px;
   width: 27vw;
   box-shadow: 0px 30px 40px -20px black;
   border-radius: 10px;
+}
+.rightcontent a {
+  margin-top: auto;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 5px 129px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(142, 23, 198);
+  transition: 0.5s;
 }
 
 .ions {
@@ -194,30 +207,28 @@ img {
   color: #fff;
   background-color: rgb(142, 23, 198);
   transition: 0.5s;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
-.rightcontent a {
-  text-decoration: none;
-  padding: 5px 129px;
-  border-radius: 5px;
-  color: #fff;
-  background-color: rgb(142, 23, 198);
-  transition: 0.5s;
-}
+
 .rightcontent a:hover {
-  background-color: black;
+  background-color: white;
+  color: #000000;
+  
 }
 .leftcontent a:hover {
-  background-color: black;
+  background-color: white;
+  color: #000000;
 }
 
 .preal {
   margin-left: 18px;
   margin-right: 6px;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   word-wrap: break-word;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
-  color: rgb(101, 1, 101);
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  color: #fff;
 }
 
 /*-----------------------------------------------------CONTACT--------------------------------------------------------------------------*/
@@ -275,7 +286,7 @@ img {
   border-radius: 5px;
   color: white;
   transition: background 0.1s;
-  border: 1px solid white;
+  border: 2px solid white;
   text-align: center;
 }
 
@@ -290,11 +301,11 @@ form input,
 form textarea {
   outline: none;
   font-family: "Times New Roman", Times, serif;
-  background: #000000;
+  
   margin: 13px 0;
   width: 100%;
   padding: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   border-radius: 7px;
   border-width: 2px;
@@ -305,10 +316,10 @@ form textarea {
   text-decoration: none;
   padding: 12px 50px;
   border-radius: 5px;
-  background-color: black;
+  background-color: #01001e;
   color: white;
   transition: background 0.1s;
-  border: 1px solid white;
+  border: 2px solid white;
   text-align: center;
   font-size: 15px;
 }
@@ -336,10 +347,10 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(253, 248, 248, 0.998);
+  background-color: rgba(154, 154, 154, 0.998);
   color: black;
   opacity: 0.9;
-  padding: 1vh;
+  padding: 4vh;
   font-weight: 600;
 }
 

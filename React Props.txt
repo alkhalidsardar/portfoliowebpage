@@ -1,0 +1,38 @@
+React Props
+
+function AddTwoNumbers(a , b){
+return a + b
+}
+-----------
+youtubue and amazon has similar components
+
+----------------------------------
+jsx (html and js)
+<h1> hello {name} </h1>
+html land , javascript land
+--------------------------
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+
+function App() {
+  const date = new Date()
+  const hours = date.getHours()
+  let timeOfDay 
+  if(hours < 12){
+    timeOfDay = "Morning" 
+  }
+  else if (hours >= 12 && hours < 13 ){
+    timeOfDay = "Afternoon"
+  } else {
+      timeOfDay = "night"
+      } 
+  
+  return( <h1> Good {timeOfDay} </h1> )
+}
+
+export default App;
+
+
+ReactDOM.render(<App />, document.getElementById("root"))
