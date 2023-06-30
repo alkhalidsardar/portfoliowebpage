@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 
 * {
   margin: 0;
@@ -14,6 +16,7 @@
   --ddviolet: #753283;
   --lblack: #464646;
   --fontc: rgb(91, 0, 91);
+  --dddvioet: #2e0836;
 }
 html{
   scroll-behavior: smooth;
@@ -59,7 +62,7 @@ nav {
   font-size: 25px;
 }
 span {
-  color: RED;
+  color: rgb(222, 0, 0);
 }
 nav ul li {
   display: inline-flex;
@@ -210,11 +213,14 @@ nav .icons {
 
 /*-------------------------------------------Services-----------------------------------------------------------------*/
 #services {
-  margin: 50px;
+  background-color: var(--lpink);
+  padding-bottom: 50px;
   padding-top: 40px;
 }
 #services h2{
   font-size: 40px;
+  margin-bottom: 4vh;
+  color: var(--fontc);
 }
 .services {
   display: flex;
@@ -223,33 +229,52 @@ nav .icons {
 }
 .services-list {
   display: flex;
-  margin-top: 40px;
+  align-items: center;
   justify-content: center;
  
   
 }
-.services-list div {
-  background-color: wheat;
+.srdiv {
+  -webkit-box-shadow: 6px 11px 5px 0px rgba(0,0,0,0.32);
+  -moz-box-shadow: 6px 11px 5px 0px rgba(0,0,0,0.32);
+  box-shadow: 6px 11px 5px 0px rgba(0,0,0,0.32);
+background-color: #b4b4ff;
+background-image: linear-gradient(0deg, #b4b4ff 0%, #a750ff 50%, #cf40ff 100%);
+
+
   padding: 20px 20px 20px 30px;
-  margin-right: 15px;
-  margin-left: 15px;
-  border-radius: 10px;
+  height: 250px;
+  width: 320px;
+  margin-right: 25px;
+  border-radius: 7px;
   transition: background-color 0.5s, transform 0.5s;
   color: black;
 }
 .services-list div i {
-  font-size: 50px;
+  font-size: 40px;
+  color: white;
 }
 .services-list div h3 {
-  font-size: 30px;
+  color: white;
+  font-size: 22px;
   font-weight: 500;
-  margin-bottom: 18px;
-  margin-top: 10px;
-  font-family: "Times New Roman", Times, serif;
+  margin-right: auto;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  align-self: center;
+ 
+}
+.iconflex{
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
 }
 .services-list div p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  color: white;
 }
 .services-list div a {
   font-size: 16px;
@@ -258,7 +283,7 @@ nav .icons {
   text-decoration: none;
   display: inline-block;
   color: black;
-  font-family: "Times New Roman", Times, serif;
+ 
 }
 .services-list div:hover {
   background: pink;
@@ -325,12 +350,14 @@ nav .icons {
 .layer h3 {
   font-weight: 500;
   margin: 5px;
+  color: white;
 }
 .layer p {
+  color: white;
   margin: 10px;
   font-size: 10px;
   font-weight: 500;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Inter", Times, serif;
 }
 .layer a {
   color: #ff004f;
@@ -394,7 +421,7 @@ nav .icons {
   font-size: 40px;
 }
 .contact-left p i {
-  color: goldenrod;
+  color: var(--fontc);
 }
 .socialiconsflexbox {
   display: flex;
@@ -404,8 +431,8 @@ nav .icons {
 }
 .socialicons i {
   margin-right: 15px;
-  font-size: 28px;
-  color: aliceblue;
+  font-size: 32px;
+  color: var(--fontc);
   transition: font-size 0.5s;
 }
 .socialicons i:hover {
@@ -419,9 +446,9 @@ nav .icons {
   text-decoration: none;
   padding: 10px 40px;
   border-radius: 5px;
-  color: white;
+  color: var(--fontc);
   transition: background 0.1s;
-  border: 1px solid white;
+  border: 2px solid var(--fontc);
   text-align: center;
 }
 
@@ -431,18 +458,23 @@ nav .icons {
 }
 .contact-right form {
   margin-right: 2vw;
+  
 }
 form input,
 form textarea {
+  -webkit-box-shadow: inset 10px 10px 3px -4px rgba(162,123,170,1);
+-moz-box-shadow: inset 10px 10px 3px -4px rgba(162,123,170,1);
+box-shadow: inset 10px 10px 3px -4px rgba(162,123,170,1);
   outline: none;
   font-family: "Times New Roman", Times, serif;
-  background: #262626;
+  background: var(--lpink);
   margin: 13px 0;
   width: 100%;
   padding: 15px;
-  color: white;
+  color: black;
+  border: 2px solid var(--fontc);
   font-size: 14px;
-  border-radius: 7px;
+  border-radius: 5px;
   border-width: 2px;
   border-style: solid;
 }
@@ -451,17 +483,18 @@ form textarea {
   text-decoration: none;
   padding: 12px 50px;
   border-radius: 5px;
-  background-color: black;
-  color: white;
+  background-color: var(--pink);
+  color: var(--fontc);
   transition: background 0.1s;
-  border: 1px solid white;
+  border: 2px solid var(--fontc);
   text-align: center;
   font-size: 15px;
 }
 .btn3:hover {
-  background: #ff004f;
-  border: 1px solid black;
+  background: var(--ddviolet);
+  color: white;
 }
+
 /*================================================================== Footer ============================================*/
 
 .footeritems {
@@ -479,14 +512,14 @@ color: white;
 }
 .copyright {
   font-size: 14px;
-  margin-top: 0vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(59, 59, 59, 0.998);
+  background-color: var(--lblack);
   color: white;
   opacity: 0.9;
-  padding: 1vh;
+  padding: 5vh;
   font-weight: 600;
 }
 /*================================================ MEDIA ==========================================================*/
@@ -540,7 +573,6 @@ color: white;
   /*---------------------------about--------------------------------------------------------------------------------*/
   #about {
     padding-top: 20px;
-    color: white;
   }
 
   .column1 {
@@ -551,13 +583,10 @@ color: white;
     margin-bottom: 4vh;
     margin-top: 6vh;
   }
-  .column1 img {
-    height: 240px;
-    border-right: 16px solid white;
-    border-left: 16px solid white;
-    border-radius: 10px;
-    
+  .row{
+    margin-bottom: 5vh;
   }
+
 
   .column2 h3 {
     display: flex;
@@ -568,11 +597,9 @@ color: white;
     margin-top: 15px;
   }
   .column2 p {
-    font-weight: 500;
-    font-size: 13px;
-    margin: 0px;
-    margin-bottom: 40px;
-    word-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 21px;
+    word-spacing: 7px;
   }
   .tab-name {
     display: flex;
@@ -581,16 +608,13 @@ color: white;
 
   .tabtitles {
     margin-right: 15px;
-    font-size: 10px;
-    cursor: pointer;
-    padding: 5px 20px;
-    background-color: #454545;
-    border-radius: 5px;
+font-size: 14px;
+cursor: pointer;
   }
 
   /*----------------------------------------------------------------projects--------------------------------------*/
   #portfolio{
-    padding-top: 0px;
+    padding-top: 20px;
   }
 
   .projects {
@@ -668,50 +692,45 @@ color: white;
   }
   /*----------------------------------------SERVICES-----------------------------------------------------*/
   #services {
-    margin: 30px;
-    padding-top: 20px;
+  
+    padding: 20px;
   }
   .services {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .h2flex{
     display: flex;
     justify-content: center;
+    margin-right: 0;
+
     margin-right: 6vw;
   }
  #services .container h2{
 font-size: 35px;
  }
+ .srdiv{
+  margin-right: 0;
+ }
   .services-list {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 35px;
     margin-top: 10px;
-   
   }
   .services-list div {
-    background-color: wheat;
-    padding: 10px 10px 20px 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    transition: background-color 0.5s, transform 0.5s;
-    color: black;
+    
   }
   .services-list div i {
-    font-size: 27px;
+    font-size: 53px;
   }
   .services-list div h3 {
     font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 18px;
-    margin-top: 10px;
-    font-family: "Times New Roman", Times, serif;
+   
   }
   .services-list div p {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 13px;
+ 
+    font-size: 17px;
   }
   .services-list div a {
     font-size: 16px;
@@ -735,23 +754,17 @@ font-size: 35px;
 
   .contact-right form {
     margin-top: 20px;
-   
+    margin-right: 4vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  form input, form textarea {
-    outline: none;
-    background: #262626;
-    margin: 7px 0;
-    width: 52vw;
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    border-radius: 4px;
-    border-width: 2px;
-    border-style: solid;
+  .contact-right{
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
+
+
   .socialiconsflexbox {
     display: flex;
     justify-content: center;
@@ -778,6 +791,14 @@ font-size: 35px;
     margin-top: 8vh;
   }
 
+  form textarea {
+    margin: 7px 0;
+    width: 47vw;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-width: 2px;
+  }
   .contact-left h2 {
     margin-bottom: 10px;
     font-size: 30px;
@@ -785,42 +806,32 @@ font-size: 35px;
   .h2pos {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-right: 16vw;
     margin-bottom: 5px;
   }
   .contact-left p {
-    margin: px;
-    font-size: 13px;
+ 
+    font-size: 15px;
     display: flex;
+ 
   }
   .contact-left p i {
-    color: white;
-    margin-right: 10px;
-    font-size: 20px;
+   
   }
   .awful {
     margin-left: 20px;
   }
   .btn2 {
     margin-left: 4vw;
-    padding: 10px 57px;
-    border-radius: 5px;
-    color: white;
-    border: 2px solid #ff004f;
-    text-align: center;
-  }
-  .btn3 {
-    margin-top: 17px;
-    text-decoration: none;
-    padding: 12px 85px;
-    border-radius: 5px;
-    background-color: #000000c9;
-    color: white;
-    transition: background 0.1s;
-    border: 3px solid #ff004f;
-    text-align: center;
-    font-size: 20x;
-  }  
+   padding: 10px 58px;
+ }
+ .btn3 {
+   margin-top: 17px;
+   padding: 12px 71px;
+   
+ }
+
   /*============================================================================== Footer ================================================*/
 .footeritems a {
   font-size: 9px;

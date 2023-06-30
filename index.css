@@ -387,7 +387,7 @@ form textarea {
 
   #home {
     background-image: url(zed3.jpg);
-    height: 104vh;
+    height: 120vh;
   }
 
   .container {
@@ -425,40 +425,27 @@ form textarea {
     margin-top: 18vh;
   }
   .leftcontent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 23vh;
-    width: 58vw;
+    
+    width: 64vw;
     margin-right: 25vw;
-    margin-bottom: 8vh;
+
   }
   .leftcontent a {
     padding: 5px 25px;
   }
   .preal {
-    margin-left: 15px;
-    margin-right: 4px;
-    margin-bottom: 10px;
-    word-wrap: break-word;
     font-size: 10px;
   }
   .icont p {
     margin-top: 21px;
-    color: rgb(47, 47, 47);
     font-size: 19px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
   }
   /*----------------------------------------------------------right-----------------------------------------------------*/
 
   .rightcontent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 25vh;
+   
     width: 64vw;
-    margin-bottom: 5vh;
+   
     margin-left: 23vw;
   }
   .rightcontent a {
@@ -473,17 +460,8 @@ form textarea {
   }
   .ions {
     font-size: 32px;
-    color: rgb(142, 23, 198);
-    margin-right: 5px;
-    margin-top: 14px;
   }
-  .icont p {
-    margin-top: 22px;
-    color: rgb(47, 47, 47);
-    font-size: 19px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
-  }
+  
 
   /*---------------------------------------------------------------------Contact--------------------------------------*/
 
@@ -503,16 +481,12 @@ form textarea {
   }
   form input,
   form textarea {
-    outline: none;
-    background: #000000;
     margin: 7px 0;
     width: 47vw;
     padding: 15px;
-    color: white;
     font-size: 15px;
     border-radius: 5px;
     border-width: 2px;
-    border-style: solid;
   }
   .socialiconsflexbox {
     display: flex;
@@ -560,33 +534,33 @@ form textarea {
     margin-left: 11px;
   }
   .btn2 {
-    margin-left: 4vw;
-    padding: 10px 55px;
-    border-radius: 5px;
-    color: white;
-    border: 2px solid #ff004f;
-    text-align: center;
+     margin-left: 4vw;
+    padding: 10px 58px;
   }
   .btn3 {
     margin-top: 17px;
-    text-decoration: none;
     padding: 12px 71px;
-    border-radius: 5px;
-    background-color: #000000c9;
-    color: white;
-    transition: background 0.1s;
-    border: 3px solid #ff004f;
-    text-align: center;
-    font-size: 20x;
+    
   }
   .copyright {
     margin-top: 0vh;
+
+  }
+  .footeritems{
+    display: flex;
+   margin-right: auto; 
+   gap: 6px;
+    flex-direction: column;
   }
   .footeritems p {
-    font-size: 10px;
+    font-size: 14px;
+    margin-right: auto; 
   }
   .footeritems a {
-    font-size: 10px;
-    margin-left: 18px;
+    font-size: 14px;
+    margin-right: auto; 
+    margin-left: 0;
+    
+    
   }
 }
