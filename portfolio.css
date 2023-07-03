@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
 
 
 * {
@@ -97,15 +98,24 @@ nav .icons {
 .headertext {
   position: absolute;
   left: 4vw;
-  top: 36vh;
+  top: 30vh;
 }
 .headertext p {
-  font-size: 25px;
+  font-size: 30px;
   margin: 20px;
 }
 .headertext h2 {
-  font-size: 50px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 70px;
+  font-family: "Roboto", Times, serif;
+  color: #252525;
+}
+.nameflex{
+  display: flex;
+  align-items: center;
+}
+.nameflex h4{
+font-size: 70px;
+margin-left: 5px;
 }
 .instaflex {
   margin-top: 40px;
@@ -114,7 +124,7 @@ nav .icons {
 }
 .instagit i {
   margin-right: 2vw;
-  font-size: 50px;
+  font-size: 70px;
   color: var(--fontc);
   transition: font-size 0.5s;
 }
@@ -160,9 +170,9 @@ nav .icons {
 }
 .column2 p {
   color: black;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto';
   opacity: 0.9;
-  font-size: 22px;
+  font-size: 20px;
 
 }
 .tab-name {
@@ -462,9 +472,7 @@ background-image: linear-gradient(0deg, #b4b4ff 0%, #a750ff 50%, #cf40ff 100%);
 }
 form input,
 form textarea {
-  -webkit-box-shadow: inset 10px 10px 3px -4px rgba(162,123,170,1);
--moz-box-shadow: inset 10px 10px 3px -4px rgba(162,123,170,1);
-box-shadow: inset 10px 10px 3px -4px rgba(162,123,170,1);
+
   outline: none;
   font-family: "Times New Roman", Times, serif;
   background: var(--lpink);
@@ -530,18 +538,18 @@ color: white;
   }
   /*-----------------------------------header------------------------------------------------------------------*/
   .icons{
-    font-size: 34px;
+    font-size: 37px;
     
   }
   
   .instaflex {
-    margin-top: 17vh;
+    margin-top: 12vh;
     display: flex;
     justify-content: center;
   }
   .instagit i {
     margin-right: 6vw;
-    font-size: 40px;
+    font-size: 45px;
 
     transition: font-size 0.5s;
   }
@@ -551,19 +559,32 @@ color: white;
     top: 20vh;
   }
   .headertext p {
-    font-size: 17px;
-    margin: 10px;
-  }
+    font-size: 19px;
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+   
 
+  }
+  .nameflex {
+  display: flex;
+  flex-direction: column;
+
+  }
+  .nameflex h4 {
+    font-size: 35px;
+ 
+  }
   .headertext h2 {
-    font-size: 25px;
+    margin-right: auto;
+    font-size: 30px;
     word-wrap: break-word;
-    width: 200px;
+  
   }
   .header img {
     height: 70vh;
     position: relative;
-    left: 20vw;
+    left: 24vw;
     top: 0;
   }
   .image-container {
@@ -638,6 +659,8 @@ cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: transform 0.5s;
+    margin-bottom: 36px
+   ;
   }
   .work img {
     border-radius: 10px;
@@ -692,8 +715,12 @@ cursor: pointer;
   }
   /*----------------------------------------SERVICES-----------------------------------------------------*/
   #services {
+
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 4vh;
+padding-bottom: 10vh;
   
-    padding: 20px;
   }
   .services {
     display: flex;
@@ -712,6 +739,8 @@ font-size: 35px;
  }
  .srdiv{
   margin-right: 0;
+  height: 229px;
+width: 238px;
  }
   .services-list {
     flex-wrap: wrap;
@@ -725,12 +754,12 @@ font-size: 35px;
     font-size: 53px;
   }
   .services-list div h3 {
-    font-size: 20px;
+    font-size: 17px;
    
   }
   .services-list div p {
  
-    font-size: 17px;
+    font-size: 15px;
   }
   .services-list div a {
     font-size: 16px;
@@ -746,12 +775,12 @@ font-size: 35px;
     transform: translateY(-10px);
     color: black;
   }
-  .work {
-    margin-bottom: 20px;
-  }
+
 
   /*---------------------------------------------------------------------Contact--------------------------------------*/
-
+#contact{
+  margin-top: 4vh;
+}
   .contact-right form {
     margin-top: 20px;
     margin-right: 4vw;
@@ -784,7 +813,7 @@ font-size: 35px;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 0;
-    margin-left: 2vw;
+    margin-left: 5vw;
   }
   #contact .row {
     display: flex;
@@ -823,8 +852,8 @@ font-size: 35px;
     margin-left: 20px;
   }
   .btn2 {
-    margin-left: 4vw;
-   padding: 10px 58px;
+    padding-bottom: 4vh;
+   padding: 10px 47px;
  }
  .btn3 {
    margin-top: 17px;
@@ -843,3 +872,52 @@ font-size: 35px;
   font-weight: 600;
 }
 }
+
+  /*============================================================================== text animation ================================================*/
+
+
+
+
+  .txt {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12vmin;
+    font-weight: 700;
+    animation: netflix_style 4.5s infinite;
+    outline: none;
+    white-space: nowrap;
+  }
+  
+  @keyframes netflix_style {
+    0% {
+      text-shadow: 0px 0px transparent;
+      color: #f3f3f3;
+      transform: scale(1.5, 1.5);
+    }
+    10% {
+      text-shadow: 1px 1px #aaa, 2px 2px #aaa, 3px 3px #aaa, 4px 4px #aaa, 5px 5px #aaa, 6px 6px #aaa, 7px 7px #aaa, 8px 8px #aaa, 9px 9px #aaa, 10px 10px #aaa, 11px 11px #aaa, 12px 12px #aaa, 13px 13px #aaa, 14px 14px #aaa, 15px 15px #aaa, 16px 16px #aaa, 17px 17px #aaa, 18px 18px #aaa, 19px 19px #aaa, 20px 20px #aaa, 21px 21px #aaa, 22px 22px #aaa, 23px 23px #aaa, 24px 24px #aaa, 25px 25px #aaa, 26px 26px #aaa, 27px 27px #aaa, 28px 28px #aaa, 29px 29px #aaa, 30px 30px #aaa, 31px 31px #aaa, 32px 32px #aaa, 33px 33px #aaa, 34px 34px #aaa, 35px 35px #aaa, 36px 36px #aaa, 37px 37px #aaa, 38px 38px #aaa, 39px 39px #aaa, 40px 40px #aaa, 41px 41px #aaa, 42px 42px #aaa, 43px 43px #aaa, 44px 44px #aaa, 45px 45px #aaa, 46px 46px #aaa, 47px 47px #aaa, 48px 48px #aaa, 49px 49px #aaa, 50px 50px #aaa, 51px 51px #aaa, 52px 52px #aaa, 53px 53px #aaa, 54px 54px #aaa, 55px 55px #aaa, 56px 56px #aaa, 57px 57px #aaa, 58px 58px #aaa, 59px 59px #aaa, 60px 60px #aaa, 61px 61px #aaa, 62px 62px #aaa, 63px 63px #aaa, 64px 64px #aaa, 65px 65px #aaa, 66px 66px #aaa, 67px 67px #aaa, 68px 68px #aaa, 69px 69px #aaa, 70px 70px #aaa, 71px 71px #aaa, 72px 72px #aaa, 73px 73px #aaa, 74px 74px #aaa, 75px 75px #aaa, 76px 76px #aaa, 77px 77px #aaa, 78px 78px #aaa, 79px 79px #aaa, 80px 80px #aaa, 81px 81px #aaa, 82px 82px #aaa, 83px 83px #aaa, 84px 84px #aaa, 85px 85px #aaa, 86px 86px #aaa, 87px 87px #aaa, 88px 88px #aaa, 89px 89px #aaa, 90px 90px #aaa, 91px 91px #aaa, 92px 92px #aaa, 93px 93px #aaa, 94px 94px #aaa, 95px 95px #aaa, 96px 96px #aaa, 97px 97px #aaa, 98px 98px #aaa, 99px 99px #aaa, 100px 100px #aaa;
+      color: #f3f3f3;
+      transform: scale(1.5, 1.5);
+    }
+    15% {
+      color: #f3f3f3;
+    }
+    20% {    
+      color: #e90418;
+      text-shadow: none;
+      transform: scale(1.1, 1.1);
+    }
+    75% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+      color: var(--fontc);
+      transform: scale(0.85, 0.9);
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
